@@ -1,0 +1,2599 @@
+
+import java.util.*;
+
+// driver class
+public class Myguide {
+	// Main method
+	public static void main(String[] args) {
+	loginPage();
+	Favourite f=new Favourite();
+	f.fav();
+		
+	}
+	// static block
+		static{
+			System.out.println("========================================");
+			System.out.println("-------Welcome to MyGuide App(:---------");
+			System.out.println("========================================");
+		}
+	public static void loginPage() // login page method
+	{ 
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Register your self : press [1] ");
+		System.out.println("Login yourself : press [2] ");
+		System.out.println(" ");
+		System.out.print("Choose number: ");
+		int n = sc.nextInt();
+		
+	      switch(n) {
+		case 1 : 
+			System.out.println("==============================");
+			System.out.println("-----Enter your details[]-----");
+		     System.out.println("============================= ");
+		     Scanner sc1 = new Scanner(System.in);
+		        System.out.print("Enter name: ");
+     	         String name = sc1.nextLine();
+     	        System.out.print("Enter Username: ");
+    	         String uname = sc1.nextLine();
+		           System.out.print("Set passsword: ");
+		            String pass = sc1.nextLine();
+		            System.out.print("Enter mobile number: ");
+		           String number = sc1.nextLine();
+		         System.out.print("Enter Email ID: ");
+		        String email = sc1.nextLine();
+		        System.out.println(" ");
+		        System.out.println("======================== ");
+		      System.out.print("Details submitted successfully (:\n");
+		      System.out.println(" ");		     
+		      System.out.println("Name: "+name);
+		      System.out.println("Username: "+uname);
+		      System.out.println("Password: "+pass);
+		      System.out.println("Mobile Number: "+number);
+		      System.out.println("Email-id: "+email);
+		      System.out.println("========================= ");
+		      login();
+		      	break;
+		
+		case 2 : System.out.println("Login yourself[]");
+		System.out.println(" ");
+		String ed1 = sc.nextLine();
+		 System.out.print("Enter Username: ");
+	         String name1 = sc.nextLine();
+           System.out.print("Enter passsword: ");
+            String pass1 = sc.nextLine();
+            System.out.println(" ");
+            System.out.println(" Login Successfully (:");
+            System.out.println(" ");
+		break;
+		
+		default : System.out.println("Invalid Data");
+		}
+	}
+	public static void login()
+	{
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Login yourself:");
+		System.out.println(" ");
+		//String ed1 = sc.nextLine();
+		 System.out.print("Enter Username: ");
+	         String name1 = sc.nextLine();
+           System.out.print("Enter passsword: ");
+            String pass1 = sc.nextLine();
+            System.out.println(" ");
+            System.out.println(" Login Successfully (:");
+	}
+}
+class Favourite{
+	public void fav() {
+		System.out.println("***********************************************************");
+		System.out.println("------------Choose your Favourite Temple to visit:---------");
+		System.out.println("************************************************************");
+System.out.println(" ");
+		System.out.println("************************************************************");
+		System.out.println("------------Choose your Favourite Beaches to visit:---------");
+		System.out.println("************************************************************");
+System.out.println(" ");
+		System.out.println("**************************************************************************");
+		System.out.println("------------Choose your Favourite Honeymoon destinations to visit:---------");
+		System.out.println("**************************************************************************");
+System.out.println(" ");
+			System.out.println("***********************************************************");
+			System.out.println("------------Choose your Favourite States to visit:---------");
+			System.out.println("***********************************************************");
+			System.out.println("=======================================");
+			System.out.println("-----Enter number to choose States-----");
+			System.out.println("=======================================");
+			System.out.println(" ");
+			System.out.println(" Press 1 To Visit Temples(:\n Press 2 To Visit Beaches(:\n Press 3 To Visit Honeymoon destinations(:\n Press 4 To Visit States(:");
+			Scanner sc = new Scanner(System.in);
+			int n=sc.nextInt();
+		
+			switch (n) {
+			
+			case 1: Temples ref=new Temples();
+			        ref.temple();
+			break;
+			case 2:Temples ref1=new Temples();
+	               ref1.beaches();
+				break;
+			case 3: Temples ref2=new Temples();
+                    ref2.honeymoon();
+				break;
+			case 4: States ref4 = new States();
+				    ref4.states();
+				break;
+			default : System.out.println(" Please Choose Valid Number");
+			}
+	}
+	
+}
+class Temples extends Favourite{
+	
+	public void temple() {
+		System.out.println("=============================================================");
+		System.out.println("------------Choose your Favourite Temple to visit (:---------");
+		System.out.println("=============================================================");
+		System.out.println(" ");
+		System.out.println("1. Vaishno Devi... (Temple, Jammu)\n2. Golden Temple...(Punjab) \n3. Kedarnath Temple... (Uttarakhand)\n4. Shri Padmanabha Swamy Temple... (Kerala)\n5. Badrinath Temple... (Uttarakhand)"
+				+ "\n6. Dwarkadish Temple... (Gujarat)\n7. Amarnath Cave Temple... (Jammu & Kashmir)\n8. Tirupati Balaji Temple... (Andhra Pradesh)\n9. Somnath Temple... (Gujarat)\n10. Kashi Vishwanath Temple... (Uttar Pradesh)"
+				+ "\n11. Gangotri Temple... (Uttarakhand)\n12. Sabarimala Temple... (Kerala)\n13. The Konark Sun Temple... (Odisha)\n14. Shri Jagannatha Temple... (Odisha)\n15. Shirdi Sai Baba Temple... (Maharashtra)"
+				+ "\n16. Yamunotri Temple... (Uttarakhand)\n17. Khajuraho Temple... (Madhya Pradesh)\n18. Sanchi Stupa... (Madhya Pradesh)\n 19. Siddhivinayak Temple... (Maharashtra)\n20. Ramanathaswamy Temple... (Tamil Nadu)");
+		System.out.println(" ");
+		System.out.println("========================================");
+		System.out.println("-----Enter number to choose Temples-----");
+		System.out.println("========================================");
+		System.out.println(" ");
+
+		Scanner sc=new Scanner(System.in);
+	int n=sc.nextInt();
+		switch (n) {
+		
+		case 1: System.out.println("***About Vaishno Devi Temple***");
+		System.out.println(" ");
+		System.out.println("Dedicated to the Hindu deity Vaishno Devi,\n"
+				+ "endearingly knownas Mata Rani (Goddess Durga), \n"
+				+ "this holy abode of the goddess is situated at an altitude of 5200 feet.");
+		System.out.println(" =================================================");
+		System.out.println("***What To Eat***");
+		System.out.println(" ");
+		System.out.println("1. Prem Lahori Vaishno Dhaba:\n$ INR 500 For Two\nFood: Indian\nTime: 7Am-11PM");
+		System.out.println("");
+		System.out.println("2. Sagar Ratna Restaurant:\n$ INR 500 For Two\nFood: South-Indian\nTime: 8Am-10.30PM");
+		System.out.println("");
+		System.out.println("3. Madhuban:\n$ INR 500 For Two\nFood: Indian, Chinese, Continental\nTime: 8Am-10.30PM");
+		System.out.println("==================================================");
+		System.out.println("***How To Reach***");
+		System.out.println("1. Flight\n2. Train Route\n3. Roadways");
+		System.out.println("==================================================");
+		System.out.println("***Where To Stay***");
+		System.out.println("1. Hotels\n2. Restrooms");
+		System.out.println(" ");
+System.out.println("-------City Map-------");
+System.out.println(" ");
+Scanner sc1 = new Scanner(System.in);
+System.out.println("Enter 'B' to return back");
+char m=sc1.next().charAt(0);
+switch (m) {
+case 'b': temple();
+ break;
+case 'B': temple();
+break;
+ default : System.out.println(" invalid Character");
+}
+		break;
+		
+		case 2: System.out.println("***About Golden Temple***");
+		System.out.println(" ");
+		System.out.println("The Golden temple is famous for its full golden dome,\n"
+				+ "it is one of the most sacred pilgrim spots for Sikhs.  \n"
+				+ "The Mandir is built on a 67-ft square of marble and is a two storied structure.");
+		System.out.println(" =================================================");
+		System.out.println("***What To Eat***");
+		System.out.println(" ");
+		System.out.println("1. GurdasRam Jalebi Wale, Katra Ahuwalia:\n$ INR 500 For Two\nFood: Traditional food joint.\nTime: 7Am-11PM");
+		System.out.println("");
+		System.out.println("2. Brother's Amritsari Dhaba:\n$ INR 500 For Two\nFood: Indian\nTime: 8Am-10.30PM");
+		System.out.println("");
+		System.out.println("3.  Goenka Sweets:\n$ INR 500 For Two\nFood: Indian-Sweets\nTime: 8Am-10.30PM");
+		System.out.println("==================================================");
+		System.out.println("***How To Reach***");
+		System.out.println("1. Flight\n2. Train Route\n3. Roadways");
+		System.out.println("==================================================");
+		System.out.println("***Where To Stay***");
+		System.out.println("1. Hotels\n2. Restrooms");
+		System.out.println(" ");
+System.out.println("-------City Map-------");
+System.out.println(" ");
+Scanner sc2 = new Scanner(System.in);
+System.out.println("Enter 'B' to return back");
+char m2=sc2.next().charAt(0);
+switch (m2) {
+case 'b': temple();
+ break;
+case 'B': temple();
+break;
+ default : System.out.println(" invalid Character");
+}
+		break;
+		
+		case 3:System.out.println("***About Kedarnath Temple***");
+		System.out.println(" ");
+		System.out.println("According to Hindu legends, the temple was initially built by the Pandavas,\n"
+				+ "and is one of the twelve Jyotirlingas, the holiest Hindu shrines of Shiva.  \n"
+				+ "The Pandavas were supposed to have pleased Shiva by doing penance in Kedarnath.");
+		System.out.println(" =================================================");
+		System.out.println("***What To Eat***");
+		System.out.println(" ");
+		System.out.println("1. Natraj Restaurant:\n$ INR 500 For Two\nFood: Indian\nTime: 7Am-11PM");
+		System.out.println("");
+		System.out.println("2. Umendra Bhatt Café:\n$ INR 500 For Two\nFood: Indian\nTime: 8Am-10.30PM");
+		System.out.println("");
+		System.out.println("3.  Hotel Sri Hari and Restaurant:\n$ INR 500 For Two\nFood: VEG-Indian\nTime: 8Am-10.30PM");
+		System.out.println("==================================================");
+		System.out.println("***How To Reach***");
+		System.out.println("1. Flight\n2. Train Route\n3. Roadways");
+		System.out.println("==================================================");
+		System.out.println("***Where To Stay***");
+		System.out.println("1. Hotels\n2. Restrooms");
+		System.out.println(" ");
+System.out.println("-------City Map-------");
+System.out.println(" ");
+Scanner sc3 = new Scanner(System.in);
+System.out.println("Enter 'B' to return back");
+char m3=sc3.next().charAt(0);
+switch (m3) {
+case 'b': temple();
+ break;
+case 'B': temple();
+break;
+ default : System.out.println(" invalid Character");
+}
+		break;
+		
+		case 4: System.out.println("***Shri Padmanabha Swamy Temple***");
+		System.out.println(" ");
+		System.out.println("The Shree Padmanabhaswamy Temple is a Hindu temple located in Thiruvananthapuram,\n"
+				+ "The name of the city of 'Thiruvananthapuram' in Tamil and, \n"
+				+ " Malayalam translates to The City of Lord Ananta (The City Of the infinite Shesh Naag).");
+		System.out.println(" =================================================");
+		System.out.println("***What To Eat***");
+		System.out.println(" ");
+		System.out.println("1. Mothers Veg Plaza:\n$ INR 500 For Two\nFood: Indian\nTime: 7Am-11PM");
+		System.out.println("");
+		System.out.println("2. Atithi Pure Veg Restaurant:\n$ INR 500 For Two\nFood: South-Indian\nTime: 8Am-10.30PM");
+		System.out.println("");
+		System.out.println("3. Annapoorna Vegetarian Hotel:\n$ INR 500 For Two\nFood: Indian, Continental\nTime: 8Am-10.30PM");
+		System.out.println("==================================================");
+		System.out.println("***How To Reach***");
+		System.out.println("1. Flight\n2. Train Route\n3. Roadways");
+		System.out.println("==================================================");
+		System.out.println("***Where To Stay***");
+		System.out.println("1. Hotels\n2. Restrooms");
+		System.out.println(" ");
+System.out.println("-------City Map-------");
+System.out.println(" ");
+Scanner sc4 = new Scanner(System.in);
+System.out.println("Enter 'B' to return back");
+char m4=sc4.next().charAt(0);
+switch (m4) {
+case 'b': temple();
+ break;
+case 'B': temple();
+break;
+ default : System.out.println(" invalid Character");
+}
+		break;
+		
+		case 5:System.out.println("***Badrinath Temple***");
+		System.out.println(" ");
+		System.out.println("Badrinath or Badrinarayana Temple is a Hindu temple dedicated to Vishnu.\n"
+				+ " It is situated in the town of Badrinath in Uttarakhand, India. \n"
+				+ " The temple is also one of the 108 Divya Desams dedicated to Vishnu.");
+		System.out.println(" =================================================");
+		System.out.println("***What To Eat***");
+		System.out.println(" ");
+		System.out.println("1. Mothers Veg Plaza:\n$ INR 500 For Two\nFood: Indian\nTime: 7Am-11PM");
+		System.out.println("");
+		System.out.println("2. Atithi Pure Veg Restaurant:\n$ INR 500 For Two\nFood: South-Indian\nTime: 8Am-10.30PM");
+		System.out.println("");
+		System.out.println("3. Annapoorna Vegetarian Hotel:\n$ INR 500 For Two\nFood: Indian, Continental\nTime: 8Am-10.30PM");
+		System.out.println("==================================================");
+		System.out.println("***How To Reach***");
+		System.out.println("1. Flight\n2. Train Route\n3. Roadways");
+		System.out.println("==================================================");
+		System.out.println("***Where To Stay***");
+		System.out.println("1. Hotels\n2. Restrooms");
+		System.out.println(" ");
+System.out.println("-------City Map-------");
+System.out.println(" ");
+Scanner sc5 = new Scanner(System.in);
+System.out.println("Enter 'B' to return back");
+char m5=sc5.next().charAt(0);
+switch (m5) {
+case 'b': temple();
+ break;
+case 'B': temple();
+break;
+ default : System.out.println(" invalid Character");
+}
+		break;
+		case 6:System.out.println("***Dwarkadish Temple***");
+		System.out.println(" ");
+		System.out.println(" the Char Dhams that include Badrinath, Puri and Rameshwaram,\n"
+				+ " It is believed that Lord Krishna arrived here from Braj in Uttar Pradesh, \n"
+				+ "to build the city. The temple was established by his grandson.");
+		System.out.println(" =================================================");
+		System.out.println("***What To Eat***");
+		System.out.println(" ");
+		System.out.println("1. Mothers Veg Plaza:\n$ INR 500 For Two\nFood: Indian\nTime: 7Am-11PM");
+		System.out.println("");
+		System.out.println("2. Atithi Pure Veg Restaurant:\n$ INR 500 For Two\nFood: South-Indian\nTime: 8Am-10.30PM");
+		System.out.println("");
+		System.out.println("3. Annapoorna Vegetarian Hotel:\n$ INR 500 For Two\nFood: Indian, Continental\nTime: 8Am-10.30PM");
+		System.out.println("==================================================");
+		System.out.println("***How To Reach***");
+		System.out.println("1. Flight\n2. Train Route\n3. Roadways");
+		System.out.println("==================================================");
+		System.out.println("***Where To Stay***");
+		System.out.println("1. Hotels\n2. Restrooms");
+		System.out.println(" ");
+System.out.println("-------City Map-------");
+System.out.println(" ");
+Scanner sc6 = new Scanner(System.in);
+System.out.println("Enter 'B' to return back");
+char m6=sc6.next().charAt(0);
+switch (m6) {
+case 'b': temple();
+ break;
+case 'B': temple();
+break;
+ default : System.out.println(" invalid Character");
+}
+		break;
+		case 7:	System.out.println("***Amarnath Cave Temple***");
+		System.out.println(" ");
+		System.out.println(" Amarnath Temple is a Hindu shrine located in Anantnag district of the Jammu and Kashmir, India\n"
+				+ " The cave is situated at an altitude of 3,888 m (12,756 ft), about 168 km from Anantnag city,\n"
+				+ "well known worldwide for the naturally occurring Shiva Linga made of snow.");
+		System.out.println(" =================================================");
+		System.out.println("***What To Eat***");
+		System.out.println(" ");
+		System.out.println("1. Mothers Veg Plaza:\n$ INR 500 For Two\nFood: Indian\nTime: 7Am-11PM");
+		System.out.println("");
+		System.out.println("2. Atithi Pure Veg Restaurant:\n$ INR 500 For Two\nFood: South-Indian\nTime: 8Am-10.30PM");
+		System.out.println("");
+		System.out.println("3. Annapoorna Vegetarian Hotel:\n$ INR 500 For Two\nFood: Indian, Continental\nTime: 8Am-10.30PM");
+		System.out.println("==================================================");
+		System.out.println("***How To Reach***");
+		System.out.println("1. Flight\n2. Train Route\n3. Roadways");
+		System.out.println("==================================================");
+		System.out.println("***Where To Stay***");
+		System.out.println("1. Hotels\n2. Restrooms");
+		System.out.println(" ");
+System.out.println("-------City Map-------");
+System.out.println(" ");
+Scanner sc7 = new Scanner(System.in);
+System.out.println("Enter 'B' to return back");
+char m7=sc7.next().charAt(0);
+switch (m7) {
+case 'b': temple();
+ break;
+case 'B': temple();
+break;
+ default : System.out.println(" invalid Character");
+}
+		break;
+		case 8: 	System.out.println("***Tirupati Balaji Temple***");
+		System.out.println(" ");
+		System.out.println(" Tirupati is known as the abode of the Hindu god Venkateshvara, Lord of Seven Hills,\n"
+				+ "  Tirupati is one of the most visited pilgrimage centre in India, \n"
+				+ "famous for its landmark temples, mostly dedicated to the incarnations of Lord Vishnu.");
+		System.out.println(" =================================================");
+		System.out.println("***What To Eat***");
+		System.out.println(" ");
+		System.out.println("1. Mothers Veg Plaza:\n$ INR 500 For Two\nFood: Indian\nTime: 7Am-11PM");
+		System.out.println("");
+		System.out.println("2. Atithi Pure Veg Restaurant:\n$ INR 500 For Two\nFood: South-Indian\nTime: 8Am-10.30PM");
+		System.out.println("");
+		System.out.println("3. Annapoorna Vegetarian Hotel:\n$ INR 500 For Two\nFood: Indian, Continental\nTime: 8Am-10.30PM");
+		System.out.println("==================================================");
+		System.out.println("***How To Reach***");
+		System.out.println("1. Flight\n2. Train Route\n3. Roadways");
+		System.out.println("==================================================");
+		System.out.println("***Where To Stay***");
+		System.out.println("1. Hotels\n2. Restrooms");
+		System.out.println(" ");
+System.out.println("-------City Map-------");
+System.out.println(" ");
+Scanner sc8 = new Scanner(System.in);
+System.out.println("Enter 'B' to return back");
+char m8=sc8.next().charAt(0);
+switch (m8) {
+case 'b': temple();
+ break;
+case 'B': temple();
+break;
+ default : System.out.println(" invalid Character");
+}
+		break;
+		case 9:  System.out.println("***Somnath Temple***");
+		System.out.println(" ");
+		System.out.println(" The Somnath temple, also called Somanātha temple or Deo Patan,\n"
+				+ "  is a Hindu temple located in Prabhas Patan, Veraval in Gujarat, India, \n"
+				+ " its  is believed to be first among the twelve jyotirlinga shrines of Shiva.");
+		System.out.println(" =================================================");
+		System.out.println("***What To Eat***");
+		System.out.println(" ");
+		System.out.println("1. Mothers Veg Plaza:\n$ INR 500 For Two\nFood: Indian\nTime: 7Am-11PM");
+		System.out.println("");
+		System.out.println("2. Atithi Pure Veg Restaurant:\n$ INR 500 For Two\nFood: South-Indian\nTime: 8Am-10.30PM");
+		System.out.println("");
+		System.out.println("3. Annapoorna Vegetarian Hotel:\n$ INR 500 For Two\nFood: Indian, Continental\nTime: 8Am-10.30PM");
+		System.out.println("==================================================");
+		System.out.println("***How To Reach***");
+		System.out.println("1. Flight\n2. Train Route\n3. Roadways");
+		System.out.println("==================================================");
+		System.out.println("***Where To Stay***");
+		System.out.println("1. Hotels\n2. Restrooms");
+		System.out.println(" ");
+System.out.println("-------City Map-------");
+System.out.println(" ");
+Scanner sc9 = new Scanner(System.in);
+System.out.println("Enter 'B' to return back");
+char m9=sc9.next().charAt(0);
+switch (m9) {
+case 'b': temple();
+ break;
+case 'B': temple();
+break;
+ default : System.out.println(" invalid Character");
+}
+		break;
+		
+		case 10:   System.out.println("***Kashi Vishwanath Temple***");
+		System.out.println(" ");
+		System.out.println(" The Somnath temple, also called Somanātha temple or Deo Patan,\n"
+				+ "  is a Hindu temple located in Prabhas Patan, Veraval in Gujarat, India, \n"
+				+ " its  is believed to be first among the twelve jyotirlinga shrines of Shiva.");
+		System.out.println(" =================================================");
+		System.out.println("***What To Eat***");
+		System.out.println(" ");
+		System.out.println("1. Mothers Veg Plaza:\n$ INR 500 For Two\nFood: Indian\nTime: 7Am-11PM");
+		System.out.println("");
+		System.out.println("2. Atithi Pure Veg Restaurant:\n$ INR 500 For Two\nFood: South-Indian\nTime: 8Am-10.30PM");
+		System.out.println("");
+		System.out.println("3. Annapoorna Vegetarian Hotel:\n$ INR 500 For Two\nFood: Indian, Continental\nTime: 8Am-10.30PM");
+		System.out.println("==================================================");
+		System.out.println("***How To Reach***");
+		System.out.println("1. Flight\n2. Train Route\n3. Roadways");
+		System.out.println("==================================================");
+		System.out.println("***Where To Stay***");
+		System.out.println("1. Hotels\n2. Restrooms");
+		System.out.println(" ");
+System.out.println("-------City Map-------");
+System.out.println(" ");
+Scanner sc10 = new Scanner(System.in);
+System.out.println("Enter 'B' to return back");
+char m10=sc10.next().charAt(0);
+switch (m10) {
+case 'b': temple();
+ break;
+case 'B': temple();
+break;
+ default : System.out.println(" invalid Character");
+}
+		break;
+		case 11: System.out.println("***Gangotri Temple***");
+		System.out.println(" ");
+		System.out.println(" The original Gangotri Temple was built by the Nepalese general Amar Singh Thapa,\n"
+				+ "  The temple is closed from Diwali day every year and is reopened on Akshaya Tritiya, \n"
+				+ " It is the highest temple dedicated to Goddess Ganga.");
+		System.out.println(" =================================================");
+		System.out.println("***What To Eat***");
+		System.out.println(" ");
+		System.out.println("1. Mothers Veg Plaza:\n$ INR 500 For Two\nFood: Indian\nTime: 7Am-11PM");
+		System.out.println("");
+		System.out.println("2. Atithi Pure Veg Restaurant:\n$ INR 500 For Two\nFood: South-Indian\nTime: 8Am-10.30PM");
+		System.out.println("");
+		System.out.println("3. Annapoorna Vegetarian Hotel:\n$ INR 500 For Two\nFood: Indian, Continental\nTime: 8Am-10.30PM");
+		System.out.println("==================================================");
+		System.out.println("***How To Reach***");
+		System.out.println("1. Flight\n2. Train Route\n3. Roadways");
+		System.out.println("==================================================");
+		System.out.println("***Where To Stay***");
+		System.out.println("1. Hotels\n2. Restrooms");
+		System.out.println(" ");
+System.out.println("-------City Map-------");
+System.out.println(" ");
+Scanner sc11 = new Scanner(System.in);
+System.out.println("Enter 'B' to return back");
+char m11=sc11.next().charAt(0);
+switch (m11) {
+case 'b': temple();
+ break;
+case 'B': temple();
+break;
+ default : System.out.println(" invalid Character");
+}
+		break;
+		case 12: System.out.println("***Sabarimala Temple***");
+		System.out.println(" ");
+		System.out.println("It is believed that the prince of Pandalam dynasty,\n"
+				+ "  an avatar of Shasta, meditated at Sabarimala temple and became one with the divine, \n"
+				+ " The place where the prince meditated is the Manimandapam.");
+		System.out.println(" =================================================");
+		System.out.println("***What To Eat***");
+		System.out.println(" ");
+		System.out.println("1. Mothers Veg Plaza:\n$ INR 500 For Two\nFood: Indian\nTime: 7Am-11PM");
+		System.out.println("");
+		System.out.println("2. Atithi Pure Veg Restaurant:\n$ INR 500 For Two\nFood: South-Indian\nTime: 8Am-10.30PM");
+		System.out.println("");
+		System.out.println("3. Annapoorna Vegetarian Hotel:\n$ INR 500 For Two\nFood: Indian, Continental\nTime: 8Am-10.30PM");
+		System.out.println("==================================================");
+		System.out.println("***How To Reach***");
+		System.out.println("1. Flight\n2. Train Route\n3. Roadways");
+		System.out.println("==================================================");
+		System.out.println("***Where To Stay***");
+		System.out.println("1. Hotels\n2. Restrooms");
+		System.out.println(" ");
+System.out.println("-------City Map-------");
+System.out.println(" ");
+Scanner sc12 = new Scanner(System.in);
+System.out.println("Enter 'B' to return back");
+char m12=sc12.next().charAt(0);
+switch (m12) {
+case 'b': temple();
+ break;
+case 'B': temple();
+break;
+ default : System.out.println(" invalid Character");
+}
+		break;
+		case 13: System.out.println("***The Konark Sun Temple***");
+		System.out.println(" ");
+		System.out.println("Sun Temple, also called Surya Deula or Surya Deul, temple in Konark,\n"
+				+ "  Odisha state, India, that is dedicated to the Hindu sun god Surya, \n"
+				+ " Odisha state, India, that is dedicated to the Hindu sun god Surya.");
+		System.out.println(" =================================================");
+		System.out.println("***What To Eat***");
+		System.out.println(" ");
+		System.out.println("1. Mothers Veg Plaza:\n$ INR 500 For Two\nFood: Indian\nTime: 7Am-11PM");
+		System.out.println("");
+		System.out.println("2. Atithi Pure Veg Restaurant:\n$ INR 500 For Two\nFood: South-Indian\nTime: 8Am-10.30PM");
+		System.out.println("");
+		System.out.println("3. Annapoorna Vegetarian Hotel:\n$ INR 500 For Two\nFood: Indian, Continental\nTime: 8Am-10.30PM");
+		System.out.println("==================================================");
+		System.out.println("***How To Reach***");
+		System.out.println("1. Flight\n2. Train Route\n3. Roadways");
+		System.out.println("==================================================");
+		System.out.println("***Where To Stay***");
+		System.out.println("1. Hotels\n2. Restrooms");
+		System.out.println(" ");
+System.out.println("-------City Map-------");
+System.out.println(" ");
+Scanner sc13 = new Scanner(System.in);
+System.out.println("Enter 'B' to return back");
+char m13=sc13.next().charAt(0);
+switch (m13) {
+case 'b': temple();
+ break;
+case 'B': temple();
+break;
+ default : System.out.println(" invalid Character");
+}
+		break;
+		case 14: System.out.println("***Shri Jagannatha Temple***");
+		System.out.println(" ");
+		System.out.println("It is one of the Char Dham pilgrimage sites in India,\n"
+				+ " and is also well-known for the annual chariot festival or Rath Yatra, \n"
+				+ " King Indradyumn built this holy shrine after Lord Vishnu blessed and guided him in his dreams to find Nila Madhava..");
+		System.out.println(" =================================================");
+		System.out.println("***What To Eat***");
+		System.out.println(" ");
+		System.out.println("1. Mothers Veg Plaza:\n$ INR 500 For Two\nFood: Indian\nTime: 7Am-11PM");
+		System.out.println("");
+		System.out.println("2. Atithi Pure Veg Restaurant:\n$ INR 500 For Two\nFood: South-Indian\nTime: 8Am-10.30PM");
+		System.out.println("");
+		System.out.println("3. Annapoorna Vegetarian Hotel:\n$ INR 500 For Two\nFood: Indian, Continental\nTime: 8Am-10.30PM");
+		System.out.println("==================================================");
+		System.out.println("***How To Reach***");
+		System.out.println("1. Flight\n2. Train Route\n3. Roadways");
+		System.out.println("==================================================");
+		System.out.println("***Where To Stay***");
+		System.out.println("1. Hotels\n2. Restrooms");
+		System.out.println(" ");
+System.out.println("-------City Map-------");
+System.out.println(" ");
+Scanner sc14 = new Scanner(System.in);
+System.out.println("Enter 'B' to return back");
+char m14=sc14.next().charAt(0);
+switch (m14) {
+case 'b': temple();
+ break;
+case 'B': temple();
+break;
+ default : System.out.println(" invalid Character");
+}
+		break;
+		case 15:	 System.out.println("***Shirdi Sai Baba Temple***");
+		System.out.println(" ");
+		System.out.println("Sai Baba is commemorated in the form of his shrine at Shirdi,\n"
+				+ "Sai Baba Temple is open to the people from all religions, castes and creeds, \n"
+				+ " ere, the mortal body of Sai Baba was actually buried and later, a 'Samadhi' was built on the spot.");
+		System.out.println(" =================================================");
+		System.out.println("***What To Eat***");
+		System.out.println(" ");
+		System.out.println("1. Mothers Veg Plaza:\n$ INR 500 For Two\nFood: Indian\nTime: 7Am-11PM");
+		System.out.println("");
+		System.out.println("2. Atithi Pure Veg Restaurant:\n$ INR 500 For Two\nFood: South-Indian\nTime: 8Am-10.30PM");
+		System.out.println("");
+		System.out.println("3. Annapoorna Vegetarian Hotel:\n$ INR 500 For Two\nFood: Indian, Continental\nTime: 8Am-10.30PM");
+		System.out.println("==================================================");
+		System.out.println("***How To Reach***");
+		System.out.println("1. Flight\n2. Train Route\n3. Roadways");
+		System.out.println("==================================================");
+		System.out.println("***Where To Stay***");
+		System.out.println("1. Hotels\n2. Restrooms");
+		System.out.println(" ");
+System.out.println("-------City Map-------");
+System.out.println(" ");
+Scanner sc15 = new Scanner(System.in);
+System.out.println("Enter 'B' to return back");
+char m15=sc15.next().charAt(0);
+switch (m15) {
+case 'b': temple();
+ break;
+case 'B': temple();
+break;
+ default : System.out.println(" invalid Character");
+}
+		break;
+		case 16:  System.out.println("***Yamunotri Temple***");
+		System.out.println(" ");
+		System.out.println("Yamunotri Temple is considered to be the abode of Goddess Yamuna,\n"
+				+ "Yamunotri Temple is considered to be the abode of Goddess Yamuna, \n"
+				+ " near the foot of Kalind Parbat and is the highest temple dedicated to Goddess Yamunotri.");
+		System.out.println(" =================================================");
+		System.out.println("***What To Eat***");
+		System.out.println(" ");
+		System.out.println("1. Mothers Veg Plaza:\n$ INR 500 For Two\nFood: Indian\nTime: 7Am-11PM");
+		System.out.println("");
+		System.out.println("2. Atithi Pure Veg Restaurant:\n$ INR 500 For Two\nFood: South-Indian\nTime: 8Am-10.30PM");
+		System.out.println("");
+		System.out.println("3. Annapoorna Vegetarian Hotel:\n$ INR 500 For Two\nFood: Indian, Continental\nTime: 8Am-10.30PM");
+		System.out.println("==================================================");
+		System.out.println("***How To Reach***");
+		System.out.println("1. Flight\n2. Train Route\n3. Roadways");
+		System.out.println("==================================================");
+		System.out.println("***Where To Stay***");
+		System.out.println("1. Hotels\n2. Restrooms");
+		System.out.println(" ");
+System.out.println("-------City Map-------");
+System.out.println(" ");
+Scanner sc16 = new Scanner(System.in);
+System.out.println("Enter 'B' to return back");
+char m16=sc16.next().charAt(0);
+switch (m16) {
+case 'b': temple();
+ break;
+case 'B': temple();
+break;
+ default : System.out.println(" invalid Character");
+}
+		break;
+		case 17:   System.out.println("***Khajuraho Temple***");
+		System.out.println(" ");
+		System.out.println("a group of Hindu and Jain temples in Chhatarpur district, Madhya Pradesh,,\n"
+				+ "about 175 kilometres southeast of Jhansi, \n"
+				+ "They are a UNESCO World Heritage Site.");
+		System.out.println(" =================================================");
+		System.out.println("***What To Eat***");
+		System.out.println(" ");
+		System.out.println("1. Mothers Veg Plaza:\n$ INR 500 For Two\nFood: Indian\nTime: 7Am-11PM");
+		System.out.println("");
+		System.out.println("2. Atithi Pure Veg Restaurant:\n$ INR 500 For Two\nFood: South-Indian\nTime: 8Am-10.30PM");
+		System.out.println("");
+		System.out.println("3. Annapoorna Vegetarian Hotel:\n$ INR 500 For Two\nFood: Indian, Continental\nTime: 8Am-10.30PM");
+		System.out.println("==================================================");
+		System.out.println("***How To Reach***");
+		System.out.println("1. Flight\n2. Train Route\n3. Roadways");
+		System.out.println("==================================================");
+		System.out.println("***Where To Stay***");
+		System.out.println("1. Hotels\n2. Restrooms");
+		System.out.println(" ");
+System.out.println("-------City Map-------");
+System.out.println(" ");
+Scanner sc17 = new Scanner(System.in);
+System.out.println("Enter 'B' to return back");
+char m17=sc17.next().charAt(0);
+switch (m17) {
+case 'b': temple();
+ break;
+case 'B': temple();
+break;
+ default : System.out.println(" invalid Character");
+}
+		break;
+		case 18:
+		  System.out.println("***Sanchi Stupa***");
+		System.out.println(" ");
+		System.out.println("a group of Hindu and Jain temples in Chhatarpur district, Madhya Pradesh,,\n"
+				+ "about 175 kilometres southeast of Jhansi, \n"
+				+ "They are a UNESCO World Heritage Site.");
+		System.out.println(" =================================================");
+		System.out.println("***What To Eat***");
+		System.out.println(" ");
+		System.out.println("1. Mothers Veg Plaza:\n$ INR 500 For Two\nFood: Indian\nTime: 7Am-11PM");
+		System.out.println("");
+		System.out.println("2. Atithi Pure Veg Restaurant:\n$ INR 500 For Two\nFood: South-Indian\nTime: 8Am-10.30PM");
+		System.out.println("");
+		System.out.println("3. Annapoorna Vegetarian Hotel:\n$ INR 500 For Two\nFood: Indian, Continental\nTime: 8Am-10.30PM");
+		System.out.println("==================================================");
+		System.out.println("***How To Reach***");
+		System.out.println("1. Flight\n2. Train Route\n3. Roadways");
+		System.out.println("==================================================");
+		System.out.println("***Where To Stay***");
+		System.out.println("1. Hotels\n2. Restrooms");
+		System.out.println(" ");
+System.out.println("-------City Map-------");
+System.out.println(" ");
+Scanner sc18 = new Scanner(System.in);
+System.out.println("Enter 'B' to return back");
+char m18=sc18.next().charAt(0);
+switch (m18) {
+case 'b': temple();
+ break;
+case 'B': temple();
+break;
+ default : System.out.println(" invalid Character");
+}
+		break;
+		case 19:
+		   System.out.println("***Siddhivinayak Temple***");
+		System.out.println(" ");
+		System.out.println("a group of Hindu and Jain temples in Chhatarpur district, Madhya Pradesh,,\n"
+				+ "about 175 kilometres southeast of Jhansi, \n"
+				+ "They are a UNESCO World Heritage Site.");
+		System.out.println(" =================================================");
+		System.out.println("***What To Eat***");
+		System.out.println(" ");
+		System.out.println("1. Mothers Veg Plaza:\n$ INR 500 For Two\nFood: Indian\nTime: 7Am-11PM");
+		System.out.println("");
+		System.out.println("2. Atithi Pure Veg Restaurant:\n$ INR 500 For Two\nFood: South-Indian\nTime: 8Am-10.30PM");
+		System.out.println("");
+		System.out.println("3. Annapoorna Vegetarian Hotel:\n$ INR 500 For Two\nFood: Indian, Continental\nTime: 8Am-10.30PM");
+		System.out.println("==================================================");
+		System.out.println("***How To Reach***");
+		System.out.println("1. Flight\n2. Train Route\n3. Roadways");
+		System.out.println("==================================================");
+		System.out.println("***Where To Stay***");
+		System.out.println("1. Hotels\n2. Restrooms");
+		System.out.println(" ");
+System.out.println("-------City Map-------");
+System.out.println(" ");
+Scanner sc19 = new Scanner(System.in);
+System.out.println("Enter 'B' to return back");
+char m19=sc19.next().charAt(0);
+switch (m19) {
+case 'b': temple();
+ break;
+case 'B': temple();
+break;
+ default : System.out.println(" invalid Character");
+}
+		break;
+		case 20:	
+		  System.out.println("***Ramanathaswamy Temple***");
+		System.out.println(" ");
+		System.out.println("a group of Hindu and Jain temples in Chhatarpur district, Madhya Pradesh,,\n"
+				+ "about 175 kilometres southeast of Jhansi, \n"
+				+ "They are a UNESCO World Heritage Site.");
+		System.out.println(" =================================================");
+		System.out.println("***What To Eat***");
+		System.out.println(" ");
+		System.out.println("1. Mothers Veg Plaza:\n$ INR 500 For Two\nFood: Indian\nTime: 7Am-11PM");
+		System.out.println("");
+		System.out.println("2. Atithi Pure Veg Restaurant:\n$ INR 500 For Two\nFood: South-Indian\nTime: 8Am-10.30PM");
+		System.out.println("");
+		System.out.println("3. Annapoorna Vegetarian Hotel:\n$ INR 500 For Two\nFood: Indian, Continental\nTime: 8Am-10.30PM");
+		System.out.println("==================================================");
+		System.out.println("***How To Reach***");
+		System.out.println("1. Flight\n2. Train Route\n3. Roadways");
+		System.out.println("==================================================");
+		System.out.println("***Where To Stay***");
+		System.out.println("1. Hotels\n2. Restrooms");
+		System.out.println(" ");
+System.out.println("-------City Map-------");
+System.out.println(" ");
+Scanner sc20 = new Scanner(System.in);
+System.out.println("Enter 'B' to return back");
+char m20=sc20.next().charAt(0);
+switch (m20) {
+case 'b': temple();
+ break;
+case 'B': temple();
+break;
+ default : System.out.println(" invalid Character");
+} 
+		break;
+		default: System.out.println("Invalid number, please enter valid number(:");
+		}
+	}
+	public void beaches() {
+		System.out.println("==============================================================");
+		System.out.println("------------Choose your Favourite Beaches to visit (:---------");
+		System.out.println("==============================================================");
+		System.out.println(" ");
+		System.out.println("1. Gokarna... (Karnataka)\n2. Tarkarli... (Maharashtra)\n3. Kapu... (Karnataka)\n4. Bekal... (Kerala)\n5. Palolem... (Goa)"
+				+ "\n6.  Rushikonda... (Andhra Pradesh)\n7. Puri... (Odisha)\n8. Anjuna... (North Goa)\n9. Mandarmani... (West Bengal)\n10. Minicoy... (Lakshadweep)"
+				+ "\n11. Tharangambadi... (Tamil Nadu)\n12. Arambol... (North Goa)\n13. Varkala... (Kerala)\n14. Radhanagar... (Andaman and Nicobar Islands)\n15. Agonda... (South Goa)"
+				+ "\n16. Mamallapuram... (Tamil Nadu)\n17. Ganpatipule... (Maharashtra)");
+		System.out.println(" ");
+		System.out.println("========================================");
+		System.out.println("-----Enter number to choose Beaches-----");
+		System.out.println("========================================");
+		System.out.println(" ");
+		Scanner sc=new Scanner(System.in);
+	int n=sc.nextInt();
+		switch (n) {
+		
+		case 1: System.out.println("----------------------\n***Gokarna Beach***\n----------------------\n ");
+		System.out.println("***What To Eat***");
+		System.out.println(" ");
+		System.out.println("1. Prem Lahori Vaishno Dhaba:\n$ INR 500 For Two\nFood: Indian\nTime: 7Am-11PM");
+		System.out.println("");
+		System.out.println("2. Sagar Ratna Restaurant:\n$ INR 500 For Two\nFood: South-Indian\nTime: 8Am-10.30PM");
+		System.out.println("");
+		System.out.println("3. Madhuban:\n$ INR 500 For Two\nFood: Indian, Chinese, Continental\nTime: 8Am-10.30PM");
+		System.out.println("==================================================");
+		System.out.println("***How To Reach***");
+		System.out.println("1. Flight\n2. Train Route\n3. Roadways");
+		System.out.println("==================================================");
+		System.out.println("***Where To Stay***");
+		System.out.println("1. Hotels\n2. Restrooms");
+		System.out.println(" ");
+System.out.println("-------City Map-------");
+System.out.println(" ");
+Scanner sc1 = new Scanner(System.in);
+System.out.println("Enter 'B' to return back");
+char m=sc1.next().charAt(0);
+switch (m) {
+case 'b': beaches();
+ break;
+case 'B': beaches();
+break;
+ default : System.out.println(" invalid Character");
+}
+		break;
+		case 2:  System.out.println("----------------------\n***Tarkarli Beach***\n----------------------\n ");
+		System.out.println("***What To Eat***");
+		System.out.println(" ");
+		System.out.println("1. Prem Lahori Vaishno Dhaba:\n$ INR 500 For Two\nFood: Indian\nTime: 7Am-11PM");
+		System.out.println("");
+		System.out.println("2. Sagar Ratna Restaurant:\n$ INR 500 For Two\nFood: South-Indian\nTime: 8Am-10.30PM");
+		System.out.println("");
+		System.out.println("3. Madhuban:\n$ INR 500 For Two\nFood: Indian, Chinese, Continental\nTime: 8Am-10.30PM");
+		System.out.println("==================================================");
+		System.out.println("***How To Reach***");
+		System.out.println("1. Flight\n2. Train Route\n3. Roadways");
+		System.out.println("==================================================");
+		System.out.println("***Where To Stay***");
+		System.out.println("1. Hotels\n2. Restrooms");
+		System.out.println(" ");
+System.out.println("-------City Map-------");
+System.out.println(" ");
+Scanner sc2 = new Scanner(System.in);
+System.out.println("Enter 'B' to return back");
+char m2=sc2.next().charAt(0);
+switch (m2) {
+case 'b': beaches();
+ break;
+case 'B': beaches();
+break;
+ default : System.out.println(" invalid Character");
+}
+		break;
+		case 3:System.out.println("----------------------\n***Kapu Beach***\n----------------------\n ");
+		System.out.println("***What To Eat***");
+		System.out.println(" ");
+		System.out.println("1. Prem Lahori Vaishno Dhaba:\n$ INR 500 For Two\nFood: Indian\nTime: 7Am-11PM");
+		System.out.println("");
+		System.out.println("2. Sagar Ratna Restaurant:\n$ INR 500 For Two\nFood: South-Indian\nTime: 8Am-10.30PM");
+		System.out.println("");
+		System.out.println("3. Madhuban:\n$ INR 500 For Two\nFood: Indian, Chinese, Continental\nTime: 8Am-10.30PM");
+		System.out.println("==================================================");
+		System.out.println("***How To Reach***");
+		System.out.println("1. Flight\n2. Train Route\n3. Roadways");
+		System.out.println("==================================================");
+		System.out.println("***Where To Stay***");
+		System.out.println("1. Hotels\n2. Restrooms");
+		System.out.println(" ");
+System.out.println("-------City Map-------");
+System.out.println(" ");
+Scanner sc3 = new Scanner(System.in);
+System.out.println("Enter 'B' to return back");
+char m3=sc3.next().charAt(0);
+switch (m3) {
+case 'b': beaches();
+ break;
+case 'B': beaches();
+break;
+ default : System.out.println(" invalid Character");
+}
+		break;
+		case 4:  System.out.println("----------------------\n***Bekal Beach***\n----------------------\n ");
+		System.out.println("***What To Eat***");
+		System.out.println(" ");
+		System.out.println("1. Prem Lahori Vaishno Dhaba:\n$ INR 500 For Two\nFood: Indian\nTime: 7Am-11PM");
+		System.out.println("");
+		System.out.println("2. Sagar Ratna Restaurant:\n$ INR 500 For Two\nFood: South-Indian\nTime: 8Am-10.30PM");
+		System.out.println("");
+		System.out.println("3. Madhuban:\n$ INR 500 For Two\nFood: Indian, Chinese, Continental\nTime: 8Am-10.30PM");
+		System.out.println("==================================================");
+		System.out.println("***How To Reach***");
+		System.out.println("1. Flight\n2. Train Route\n3. Roadways");
+		System.out.println("==================================================");
+		System.out.println("***Where To Stay***");
+		System.out.println("1. Hotels\n2. Restrooms");
+		System.out.println(" ");
+System.out.println("-------City Map-------");
+System.out.println(" ");
+Scanner sc4 = new Scanner(System.in);
+System.out.println("Enter 'B' to return back");
+char m4=sc4.next().charAt(0);
+switch (m4) {
+case 'b': beaches();
+ break;
+case 'B': beaches();
+break;
+ default : System.out.println(" invalid Character");
+}
+		break;
+		case 5: System.out.println("----------------------\n***Palolem Beach***\n----------------------\n ");
+		System.out.println("***What To Eat***");
+		System.out.println(" ");
+		System.out.println("1. Prem Lahori Vaishno Dhaba:\n$ INR 500 For Two\nFood: Indian\nTime: 7Am-11PM");
+		System.out.println("");
+		System.out.println("2. Sagar Ratna Restaurant:\n$ INR 500 For Two\nFood: South-Indian\nTime: 8Am-10.30PM");
+		System.out.println("");
+		System.out.println("3. Madhuban:\n$ INR 500 For Two\nFood: Indian, Chinese, Continental\nTime: 8Am-10.30PM");
+		System.out.println("==================================================");
+		System.out.println("***How To Reach***");
+		System.out.println("1. Flight\n2. Train Route\n3. Roadways");
+		System.out.println("==================================================");
+		System.out.println("***Where To Stay***");
+		System.out.println("1. Hotels\n2. Restrooms");
+		System.out.println(" ");
+System.out.println("-------City Map-------");
+System.out.println(" ");
+Scanner sc5 = new Scanner(System.in);
+System.out.println("Enter 'B' to return back");
+char m5=sc5.next().charAt(0);
+switch (m5) {
+case 'b': beaches();
+ break;
+case 'B': beaches();
+break;
+ default : System.out.println(" invalid Character");
+}
+		break;
+		case 6: System.out.println("----------------------\n***Rushikonda Beach***\n----------------------\n ");
+		System.out.println("***What To Eat***");
+		System.out.println(" ");
+		System.out.println("1. Prem Lahori Vaishno Dhaba:\n$ INR 500 For Two\nFood: Indian\nTime: 7Am-11PM");
+		System.out.println("");
+		System.out.println("2. Sagar Ratna Restaurant:\n$ INR 500 For Two\nFood: South-Indian\nTime: 8Am-10.30PM");
+		System.out.println("");
+		System.out.println("3. Madhuban:\n$ INR 500 For Two\nFood: Indian, Chinese, Continental\nTime: 8Am-10.30PM");
+		System.out.println("==================================================");
+		System.out.println("***How To Reach***");
+		System.out.println("1. Flight\n2. Train Route\n3. Roadways");
+		System.out.println("==================================================");
+		System.out.println("***Where To Stay***");
+		System.out.println("1. Hotels\n2. Restrooms");
+		System.out.println(" ");
+System.out.println("-------City Map-------");
+System.out.println(" ");
+Scanner sc6 = new Scanner(System.in);
+System.out.println("Enter 'B' to return back");
+char m6=sc6.next().charAt(0);
+switch (m6) {
+case 'b': beaches();
+ break;
+case 'B': beaches();
+break;
+ default : System.out.println(" invalid Character");
+}
+		break;
+		case 7:	System.out.println("----------------------\n***Puri Beach***\n----------------------\n ");
+		System.out.println("***What To Eat***");
+		System.out.println(" ");
+		System.out.println("1. Prem Lahori Vaishno Dhaba:\n$ INR 500 For Two\nFood: Indian\nTime: 7Am-11PM");
+		System.out.println("");
+		System.out.println("2. Sagar Ratna Restaurant:\n$ INR 500 For Two\nFood: South-Indian\nTime: 8Am-10.30PM");
+		System.out.println("");
+		System.out.println("3. Madhuban:\n$ INR 500 For Two\nFood: Indian, Chinese, Continental\nTime: 8Am-10.30PM");
+		System.out.println("==================================================");
+		System.out.println("***How To Reach***");
+		System.out.println("1. Flight\n2. Train Route\n3. Roadways");
+		System.out.println("==================================================");
+		System.out.println("***Where To Stay***");
+		System.out.println("1. Hotels\n2. Restrooms");
+		System.out.println(" ");
+System.out.println("-------City Map-------");
+System.out.println(" ");
+Scanner sc7 = new Scanner(System.in);
+System.out.println("Enter 'B' to return back");
+char m7=sc7.next().charAt(0);
+switch (m7) {
+case 'b': beaches();
+ break;
+case 'B': beaches();
+break;
+ default : System.out.println(" invalid Character");
+}
+		break;
+		case 8: System.out.println("----------------------\n***Anjuna Beach***\n----------------------\n ");
+		System.out.println("***What To Eat***");
+		System.out.println(" ");
+		System.out.println("1. Prem Lahori Vaishno Dhaba:\n$ INR 500 For Two\nFood: Indian\nTime: 7Am-11PM");
+		System.out.println("");
+		System.out.println("2. Sagar Ratna Restaurant:\n$ INR 500 For Two\nFood: South-Indian\nTime: 8Am-10.30PM");
+		System.out.println("");
+		System.out.println("3. Madhuban:\n$ INR 500 For Two\nFood: Indian, Chinese, Continental\nTime: 8Am-10.30PM");
+		System.out.println("==================================================");
+		System.out.println("***How To Reach***");
+		System.out.println("1. Flight\n2. Train Route\n3. Roadways");
+		System.out.println("==================================================");
+		System.out.println("***Where To Stay***");
+		System.out.println("1. Hotels\n2. Restrooms");
+		System.out.println(" ");
+System.out.println("-------City Map-------");
+System.out.println(" ");
+Scanner sc8 = new Scanner(System.in);
+System.out.println("Enter 'B' to return back");
+char m8=sc8.next().charAt(0);
+switch (m8) {
+case 'b': beaches();
+ break;
+case 'B': beaches();
+break;
+ default : System.out.println(" invalid Character");
+}
+		break;
+		case 9: System.out.println("----------------------\n***Mandarmani Beach***\n----------------------\n ");
+		System.out.println("***What To Eat***");
+		System.out.println(" ");
+		System.out.println("1. Prem Lahori Vaishno Dhaba:\n$ INR 500 For Two\nFood: Indian\nTime: 7Am-11PM");
+		System.out.println("");
+		System.out.println("2. Sagar Ratna Restaurant:\n$ INR 500 For Two\nFood: South-Indian\nTime: 8Am-10.30PM");
+		System.out.println("");
+		System.out.println("3. Madhuban:\n$ INR 500 For Two\nFood: Indian, Chinese, Continental\nTime: 8Am-10.30PM");
+		System.out.println("==================================================");
+		System.out.println("***How To Reach***");
+		System.out.println("1. Flight\n2. Train Route\n3. Roadways");
+		System.out.println("==================================================");
+		System.out.println("***Where To Stay***");
+		System.out.println("1. Hotels\n2. Restrooms");
+		System.out.println(" ");
+System.out.println("-------City Map-------");
+System.out.println(" ");
+Scanner sc9 = new Scanner(System.in);
+System.out.println("Enter 'B' to return back");
+char m9=sc9.next().charAt(0);
+switch (m9) {
+case 'b': beaches();
+ break;
+case 'B': beaches();
+break;
+ default : System.out.println(" invalid Character");
+}
+		break;
+		case 10: System.out.println("----------------------\n***Minicoy Beach***\n----------------------\n ");
+		System.out.println("***What To Eat***");
+		System.out.println(" ");
+		System.out.println("1. Prem Lahori Vaishno Dhaba:\n$ INR 500 For Two\nFood: Indian\nTime: 7Am-11PM");
+		System.out.println("");
+		System.out.println("2. Sagar Ratna Restaurant:\n$ INR 500 For Two\nFood: South-Indian\nTime: 8Am-10.30PM");
+		System.out.println("");
+		System.out.println("3. Madhuban:\n$ INR 500 For Two\nFood: Indian, Chinese, Continental\nTime: 8Am-10.30PM");
+		System.out.println("==================================================");
+		System.out.println("***How To Reach***");
+		System.out.println("1. Flight\n2. Train Route\n3. Roadways");
+		System.out.println("==================================================");
+		System.out.println("***Where To Stay***");
+		System.out.println("1. Hotels\n2. Restrooms");
+		System.out.println(" ");
+System.out.println("-------City Map-------");
+System.out.println(" ");
+Scanner sc10 = new Scanner(System.in);
+System.out.println("Enter 'B' to return back");
+char m10=sc10.next().charAt(0);
+switch (m10) {
+case 'b': beaches();
+ break;
+case 'B': beaches();
+break;
+ default : System.out.println(" invalid Character");
+}
+		break;
+		case 11: System.out.println("----------------------\n***Tharangambadi Beach***\n----------------------\n ");
+		System.out.println("***What To Eat***");
+		System.out.println(" ");
+		System.out.println("1. Prem Lahori Vaishno Dhaba:\n$ INR 500 For Two\nFood: Indian\nTime: 7Am-11PM");
+		System.out.println("");
+		System.out.println("2. Sagar Ratna Restaurant:\n$ INR 500 For Two\nFood: South-Indian\nTime: 8Am-10.30PM");
+		System.out.println("");
+		System.out.println("3. Madhuban:\n$ INR 500 For Two\nFood: Indian, Chinese, Continental\nTime: 8Am-10.30PM");
+		System.out.println("==================================================");
+		System.out.println("***How To Reach***");
+		System.out.println("1. Flight\n2. Train Route\n3. Roadways");
+		System.out.println("==================================================");
+		System.out.println("***Where To Stay***");
+		System.out.println("1. Hotels\n2. Restrooms");
+		System.out.println(" ");
+System.out.println("-------City Map-------");
+System.out.println(" ");
+Scanner sc11 = new Scanner(System.in);
+System.out.println("Enter 'B' to return back");
+char m11=sc11.next().charAt(0);
+switch (m11) {
+case 'b': beaches();
+ break;
+case 'B': beaches();
+break;
+ default : System.out.println(" invalid Character");
+}
+		break;
+		case 12:  System.out.println("----------------------\n***Arambol Beach***\n----------------------\n ");
+		System.out.println("***What To Eat***");
+		System.out.println(" ");
+		System.out.println("1. Prem Lahori Vaishno Dhaba:\n$ INR 500 For Two\nFood: Indian\nTime: 7Am-11PM");
+		System.out.println("");
+		System.out.println("2. Sagar Ratna Restaurant:\n$ INR 500 For Two\nFood: South-Indian\nTime: 8Am-10.30PM");
+		System.out.println("");
+		System.out.println("3. Madhuban:\n$ INR 500 For Two\nFood: Indian, Chinese, Continental\nTime: 8Am-10.30PM");
+		System.out.println("==================================================");
+		System.out.println("***How To Reach***");
+		System.out.println("1. Flight\n2. Train Route\n3. Roadways");
+		System.out.println("==================================================");
+		System.out.println("***Where To Stay***");
+		System.out.println("1. Hotels\n2. Restrooms");
+		System.out.println(" ");
+System.out.println("-------City Map-------");
+System.out.println(" ");
+Scanner sc12 = new Scanner(System.in);
+System.out.println("Enter 'B' to return back");
+char m12=sc12.next().charAt(0);
+switch (m12) {
+case 'b': beaches();
+ break;
+case 'B': beaches();
+break;
+ default : System.out.println(" invalid Character");
+}
+		break;
+		case 13:System.out.println("----------------------\n***Varkala Beach***\n----------------------\n ");
+		System.out.println("***What To Eat***");
+		System.out.println(" ");
+		System.out.println("1. Prem Lahori Vaishno Dhaba:\n$ INR 500 For Two\nFood: Indian\nTime: 7Am-11PM");
+		System.out.println("");
+		System.out.println("2. Sagar Ratna Restaurant:\n$ INR 500 For Two\nFood: South-Indian\nTime: 8Am-10.30PM");
+		System.out.println("");
+		System.out.println("3. Madhuban:\n$ INR 500 For Two\nFood: Indian, Chinese, Continental\nTime: 8Am-10.30PM");
+		System.out.println("==================================================");
+		System.out.println("***How To Reach***");
+		System.out.println("1. Flight\n2. Train Route\n3. Roadways");
+		System.out.println("==================================================");
+		System.out.println("***Where To Stay***");
+		System.out.println("1. Hotels\n2. Restrooms");
+		System.out.println(" ");
+System.out.println("-------City Map-------");
+System.out.println(" ");
+Scanner sc13 = new Scanner(System.in);
+System.out.println("Enter 'B' to return back");
+char m13=sc13.next().charAt(0);
+switch (m13) {
+case 'b': beaches();
+ break;
+case 'B': beaches();
+break;
+ default : System.out.println(" invalid Character");
+}
+		break;
+		case 14: System.out.println("----------------------\n***Radha Nagar Beach***\n----------------------\n ");
+		System.out.println("***What To Eat***");
+		System.out.println(" ");
+		System.out.println("1. Prem Lahori Vaishno Dhaba:\n$ INR 500 For Two\nFood: Indian\nTime: 7Am-11PM");
+		System.out.println("");
+		System.out.println("2. Sagar Ratna Restaurant:\n$ INR 500 For Two\nFood: South-Indian\nTime: 8Am-10.30PM");
+		System.out.println("");
+		System.out.println("3. Madhuban:\n$ INR 500 For Two\nFood: Indian, Chinese, Continental\nTime: 8Am-10.30PM");
+		System.out.println("==================================================");
+		System.out.println("***How To Reach***");
+		System.out.println("1. Flight\n2. Train Route\n3. Roadways");
+		System.out.println("==================================================");
+		System.out.println("***Where To Stay***");
+		System.out.println("1. Hotels\n2. Restrooms");
+		System.out.println(" ");
+System.out.println("-------City Map-------");
+System.out.println(" ");
+Scanner sc14 = new Scanner(System.in);
+System.out.println("Enter 'B' to return back");
+char m14=sc14.next().charAt(0);
+switch (m14) {
+case 'b': beaches();
+ break;
+case 'B': beaches();
+break;
+ default : System.out.println(" invalid Character");
+}
+		break;
+		case 15:	System.out.println("----------------------\n***Agonda Beach***\n----------------------\n ");
+		System.out.println("***What To Eat***");
+		System.out.println(" ");
+		System.out.println("1. Prem Lahori Vaishno Dhaba:\n$ INR 500 For Two\nFood: Indian\nTime: 7Am-11PM");
+		System.out.println("");
+		System.out.println("2. Sagar Ratna Restaurant:\n$ INR 500 For Two\nFood: South-Indian\nTime: 8Am-10.30PM");
+		System.out.println("");
+		System.out.println("3. Madhuban:\n$ INR 500 For Two\nFood: Indian, Chinese, Continental\nTime: 8Am-10.30PM");
+		System.out.println("==================================================");
+		System.out.println("***How To Reach***");
+		System.out.println("1. Flight\n2. Train Route\n3. Roadways");
+		System.out.println("==================================================");
+		System.out.println("***Where To Stay***");
+		System.out.println("1. Hotels\n2. Restrooms");
+		System.out.println(" ");
+System.out.println("-------City Map-------");
+System.out.println(" ");
+Scanner sc15 = new Scanner(System.in);
+System.out.println("Enter 'B' to return back");
+char m15=sc15.next().charAt(0);
+switch (m15) {
+case 'b': beaches();
+ break;
+case 'B': beaches();
+break;
+ default : System.out.println(" invalid Character");
+}
+		break;
+		case 16: System.out.println("----------------------\n***Mamallapuram Beach***\n----------------------\n ");
+		System.out.println("***What To Eat***");
+		System.out.println(" ");
+		System.out.println("1. Prem Lahori Vaishno Dhaba:\n$ INR 500 For Two\nFood: Indian\nTime: 7Am-11PM");
+		System.out.println("");
+		System.out.println("2. Sagar Ratna Restaurant:\n$ INR 500 For Two\nFood: South-Indian\nTime: 8Am-10.30PM");
+		System.out.println("");
+		System.out.println("3. Madhuban:\n$ INR 500 For Two\nFood: Indian, Chinese, Continental\nTime: 8Am-10.30PM");
+		System.out.println("==================================================");
+		System.out.println("***How To Reach***");
+		System.out.println("1. Flight\n2. Train Route\n3. Roadways");
+		System.out.println("==================================================");
+		System.out.println("***Where To Stay***");
+		System.out.println("1. Hotels\n2. Restrooms");
+		System.out.println(" ");
+System.out.println("-------City Map-------");
+System.out.println(" ");
+Scanner sc16 = new Scanner(System.in);
+System.out.println("Enter 'B' to return back");
+char m16=sc16.next().charAt(0);
+switch (m16) {
+case 'b': beaches();
+ break;
+case 'B': beaches();
+break;
+ default : System.out.println(" invalid Character");
+}
+		break;
+		case 17: System.out.println("----------------------\n***Ganpatipule Beach***\n----------------------\n ");
+		System.out.println("***What To Eat***");
+		System.out.println(" ");
+		System.out.println("1. Prem Lahori Vaishno Dhaba:\n$ INR 500 For Two\nFood: Indian\nTime: 7Am-11PM");
+		System.out.println("");
+		System.out.println("2. Sagar Ratna Restaurant:\n$ INR 500 For Two\nFood: South-Indian\nTime: 8Am-10.30PM");
+		System.out.println("");
+		System.out.println("3. Madhuban:\n$ INR 500 For Two\nFood: Indian, Chinese, Continental\nTime: 8Am-10.30PM");
+		System.out.println("==================================================");
+		System.out.println("***How To Reach***");
+		System.out.println("1. Flight\n2. Train Route\n3. Roadways");
+		System.out.println("==================================================");
+		System.out.println("***Where To Stay***");
+		System.out.println("1. Hotels\n2. Restrooms");
+		System.out.println(" ");
+System.out.println("-------City Map-------");
+System.out.println(" ");
+Scanner sc17 = new Scanner(System.in);
+System.out.println("Enter 'B' to return back");
+char m17=sc17.next().charAt(0);
+switch (17) {
+case 'b': beaches();
+ break;
+case 'B': beaches();
+break;
+ default : System.out.println(" invalid Character");
+}
+		break;
+		default: System.out.println("Invalid number, please enter valid number(:");
+		}
+	}
+	public void honeymoon() {
+		System.out.println("============================================================================");
+		System.out.println("------------Choose your Favourite Honeymoon destinations to visit(:---------");
+		System.out.println("============================================================================");
+		System.out.println(" ");
+		System.out.println("1. Shimla\n2. Manali\n3. Dalhousie\n4. Auli\n5. Nainital"
+				+ "\n6. Mussoorie)\n7. Darjeeling\n8. Andaman\n9. Gangtok\n10. Goa"
+				+ "\n11. Udaipur\n12. Munnar\n13. Kumarakom\n14. Alleppey\n15. Ooty");
+		System.out.println(" ");
+		System.out.println("=========================================================");
+		System.out.println("-----Enter number to choose Honeymoon destinations(:-----");
+		System.out.println("=========================================================");
+		System.out.println(" ");
+		Scanner sc=new Scanner(System.in);
+	int n=sc.nextInt();
+		switch (n) {
+		
+		case 1:  System.out.println("----------------------\n***-SHIMLA-***\n----------------------\n ");
+		System.out.println("***What To Eat***");
+		System.out.println(" ");
+		System.out.println("1. Prem Lahori Vaishno Dhaba:\n$ INR 500 For Two\nFood: Indian\nTime: 7Am-11PM");
+		System.out.println("");
+		System.out.println("2. Sagar Ratna Restaurant:\n$ INR 500 For Two\nFood: South-Indian\nTime: 8Am-10.30PM");
+		System.out.println("");
+		System.out.println("3. Madhuban:\n$ INR 500 For Two\nFood: Indian, Chinese, Continental\nTime: 8Am-10.30PM");
+		System.out.println("==================================================");
+		System.out.println("***How To Reach***");
+		System.out.println("1. Flight\n2. Train Route\n3. Roadways");
+		System.out.println("==================================================");
+		System.out.println("***Where To Stay***");
+		System.out.println("1. Hotels\n2. Restrooms");
+		System.out.println(" ");
+System.out.println("-------City Map-------");
+System.out.println(" ");
+Scanner sc1 = new Scanner(System.in);
+System.out.println("Enter 'B' to return back");
+char m=sc1.next().charAt(0);
+switch (m) {
+case 'b': honeymoon();
+ break;
+case 'B': honeymoon();
+break;
+ default : System.out.println(" invalid Character");
+}
+		break;
+		case 2:   System.out.println("----------------------\n***-MANALI-***\n----------------------\n ");
+		System.out.println("***What To Eat***");
+		System.out.println(" ");
+		System.out.println("1. Prem Lahori Vaishno Dhaba:\n$ INR 500 For Two\nFood: Indian\nTime: 7Am-11PM");
+		System.out.println("");
+		System.out.println("2. Sagar Ratna Restaurant:\n$ INR 500 For Two\nFood: South-Indian\nTime: 8Am-10.30PM");
+		System.out.println("");
+		System.out.println("3. Madhuban:\n$ INR 500 For Two\nFood: Indian, Chinese, Continental\nTime: 8Am-10.30PM");
+		System.out.println("==================================================");
+		System.out.println("***How To Reach***");
+		System.out.println("1. Flight\n2. Train Route\n3. Roadways");
+		System.out.println("==================================================");
+		System.out.println("***Where To Stay***");
+		System.out.println("1. Hotels\n2. Restrooms");
+		System.out.println(" ");
+System.out.println("-------City Map-------");
+System.out.println(" ");
+Scanner sc2 = new Scanner(System.in);
+System.out.println("Enter 'B' to return back");
+char m2=sc2.next().charAt(0);
+switch (m2) {
+case 'b': honeymoon();
+ break;
+case 'B': honeymoon();
+break;
+ default : System.out.println(" invalid Character");
+}
+		break;
+		case 3:   System.out.println("----------------------\n***-DALHOUSIE-***\n----------------------\n ");
+		System.out.println("***What To Eat***");
+		System.out.println(" ");
+		System.out.println("1. Prem Lahori Vaishno Dhaba:\n$ INR 500 For Two\nFood: Indian\nTime: 7Am-11PM");
+		System.out.println("");
+		System.out.println("2. Sagar Ratna Restaurant:\n$ INR 500 For Two\nFood: South-Indian\nTime: 8Am-10.30PM");
+		System.out.println("");
+		System.out.println("3. Madhuban:\n$ INR 500 For Two\nFood: Indian, Chinese, Continental\nTime: 8Am-10.30PM");
+		System.out.println("==================================================");
+		System.out.println("***How To Reach***");
+		System.out.println("1. Flight\n2. Train Route\n3. Roadways");
+		System.out.println("==================================================");
+		System.out.println("***Where To Stay***");
+		System.out.println("1. Hotels\n2. Restrooms");
+		System.out.println(" ");
+System.out.println("-------City Map-------");
+System.out.println(" ");
+Scanner sc3 = new Scanner(System.in);
+System.out.println("Enter 'B' to return back");
+char m3=sc3.next().charAt(0);
+switch (m3) {
+case 'b': honeymoon();
+ break;
+case 'B': honeymoon();
+break;
+ default : System.out.println(" invalid Character");
+}
+		break;
+		case 4:   System.out.println("----------------------\n***-AULI-***\n----------------------\n ");
+		System.out.println("***What To Eat***");
+		System.out.println(" ");
+		System.out.println("1. Prem Lahori Vaishno Dhaba:\n$ INR 500 For Two\nFood: Indian\nTime: 7Am-11PM");
+		System.out.println("");
+		System.out.println("2. Sagar Ratna Restaurant:\n$ INR 500 For Two\nFood: South-Indian\nTime: 8Am-10.30PM");
+		System.out.println("");
+		System.out.println("3. Madhuban:\n$ INR 500 For Two\nFood: Indian, Chinese, Continental\nTime: 8Am-10.30PM");
+		System.out.println("==================================================");
+		System.out.println("***How To Reach***");
+		System.out.println("1. Flight\n2. Train Route\n3. Roadways");
+		System.out.println("==================================================");
+		System.out.println("***Where To Stay***");
+		System.out.println("1. Hotels\n2. Restrooms");
+		System.out.println(" ");
+System.out.println("-------City Map-------");
+System.out.println(" ");
+Scanner sc4 = new Scanner(System.in);
+System.out.println("Enter 'B' to return back");
+char m4=sc4.next().charAt(0);
+switch (m4) {
+case 'b': honeymoon();
+ break;
+case 'B': honeymoon();
+break;
+ default : System.out.println(" invalid Character");
+}
+		break;
+		case 5:   System.out.println("----------------------\n***-NAINITAL-***\n----------------------\n ");
+		System.out.println("***What To Eat***");
+		System.out.println(" ");
+		System.out.println("1. Prem Lahori Vaishno Dhaba:\n$ INR 500 For Two\nFood: Indian\nTime: 7Am-11PM");
+		System.out.println("");
+		System.out.println("2. Sagar Ratna Restaurant:\n$ INR 500 For Two\nFood: South-Indian\nTime: 8Am-10.30PM");
+		System.out.println("");
+		System.out.println("3. Madhuban:\n$ INR 500 For Two\nFood: Indian, Chinese, Continental\nTime: 8Am-10.30PM");
+		System.out.println("==================================================");
+		System.out.println("***How To Reach***");
+		System.out.println("1. Flight\n2. Train Route\n3. Roadways");
+		System.out.println("==================================================");
+		System.out.println("***Where To Stay***");
+		System.out.println("1. Hotels\n2. Restrooms");
+		System.out.println(" ");
+System.out.println("-------City Map-------");
+System.out.println(" ");
+Scanner sc5 = new Scanner(System.in);
+System.out.println("Enter 'B' to return back");
+char m5=sc5.next().charAt(0);
+switch (m5) {
+case 'b': honeymoon();
+ break;
+case 'B': honeymoon();
+break;
+ default : System.out.println(" invalid Character");
+}
+		break;
+		case 6:   System.out.println("----------------------\n***-MUSSOORIE-***\n----------------------\n ");
+		System.out.println("***What To Eat***");
+		System.out.println(" ");
+		System.out.println("1. Prem Lahori Vaishno Dhaba:\n$ INR 500 For Two\nFood: Indian\nTime: 7Am-11PM");
+		System.out.println("");
+		System.out.println("2. Sagar Ratna Restaurant:\n$ INR 500 For Two\nFood: South-Indian\nTime: 8Am-10.30PM");
+		System.out.println("");
+		System.out.println("3. Madhuban:\n$ INR 500 For Two\nFood: Indian, Chinese, Continental\nTime: 8Am-10.30PM");
+		System.out.println("==================================================");
+		System.out.println("***How To Reach***");
+		System.out.println("1. Flight\n2. Train Route\n3. Roadways");
+		System.out.println("==================================================");
+		System.out.println("***Where To Stay***");
+		System.out.println("1. Hotels\n2. Restrooms");
+		System.out.println(" ");
+System.out.println("-------City Map-------");
+System.out.println(" ");
+Scanner sc6 = new Scanner(System.in);
+System.out.println("Enter 'B' to return back");
+char m6=sc6.next().charAt(0);
+switch (m6) {
+case 'b': honeymoon();
+ break;
+case 'B': honeymoon();
+break;
+ default : System.out.println(" invalid Character");
+}
+		break;
+		case 7:	  System.out.println("----------------------\n***-DARJEELING-***\n----------------------\n ");
+		System.out.println("***What To Eat***");
+		System.out.println(" ");
+		System.out.println("1. Prem Lahori Vaishno Dhaba:\n$ INR 500 For Two\nFood: Indian\nTime: 7Am-11PM");
+		System.out.println("");
+		System.out.println("2. Sagar Ratna Restaurant:\n$ INR 500 For Two\nFood: South-Indian\nTime: 8Am-10.30PM");
+		System.out.println("");
+		System.out.println("3. Madhuban:\n$ INR 500 For Two\nFood: Indian, Chinese, Continental\nTime: 8Am-10.30PM");
+		System.out.println("==================================================");
+		System.out.println("***How To Reach***");
+		System.out.println("1. Flight\n2. Train Route\n3. Roadways");
+		System.out.println("==================================================");
+		System.out.println("***Where To Stay***");
+		System.out.println("1. Hotels\n2. Restrooms");
+		System.out.println(" ");
+System.out.println("-------City Map-------");
+System.out.println(" ");
+Scanner sc7 = new Scanner(System.in);
+System.out.println("Enter 'B' to return back");
+char m7=sc7.next().charAt(0);
+switch (m7) {
+case 'b': honeymoon();
+ break;
+case 'B': honeymoon();
+break;
+ default : System.out.println(" invalid Character");
+}
+		break;
+		case 8:   System.out.println("----------------------\n***-ANDAMAN-***\n----------------------\n ");
+		System.out.println("***What To Eat***");
+		System.out.println(" ");
+		System.out.println("1. Prem Lahori Vaishno Dhaba:\n$ INR 500 For Two\nFood: Indian\nTime: 7Am-11PM");
+		System.out.println("");
+		System.out.println("2. Sagar Ratna Restaurant:\n$ INR 500 For Two\nFood: South-Indian\nTime: 8Am-10.30PM");
+		System.out.println("");
+		System.out.println("3. Madhuban:\n$ INR 500 For Two\nFood: Indian, Chinese, Continental\nTime: 8Am-10.30PM");
+		System.out.println("==================================================");
+		System.out.println("***How To Reach***");
+		System.out.println("1. Flight\n2. Train Route\n3. Roadways");
+		System.out.println("==================================================");
+		System.out.println("***Where To Stay***");
+		System.out.println("1. Hotels\n2. Restrooms");
+		System.out.println(" ");
+System.out.println("-------City Map-------");
+System.out.println(" ");
+Scanner sc8 = new Scanner(System.in);
+System.out.println("Enter 'B' to return back");
+char m8=sc8.next().charAt(0);
+switch (m8) {
+case 'b': honeymoon();
+ break;
+case 'B': honeymoon();
+break;
+ default : System.out.println(" invalid Character");
+}
+		break;
+		case 9:   System.out.println("----------------------\n***-GANGTOK-***\n----------------------\n ");
+		System.out.println("***What To Eat***");
+		System.out.println(" ");
+		System.out.println("1. Prem Lahori Vaishno Dhaba:\n$ INR 500 For Two\nFood: Indian\nTime: 7Am-11PM");
+		System.out.println("");
+		System.out.println("2. Sagar Ratna Restaurant:\n$ INR 500 For Two\nFood: South-Indian\nTime: 8Am-10.30PM");
+		System.out.println("");
+		System.out.println("3. Madhuban:\n$ INR 500 For Two\nFood: Indian, Chinese, Continental\nTime: 8Am-10.30PM");
+		System.out.println("==================================================");
+		System.out.println("***How To Reach***");
+		System.out.println("1. Flight\n2. Train Route\n3. Roadways");
+		System.out.println("==================================================");
+		System.out.println("***Where To Stay***");
+		System.out.println("1. Hotels\n2. Restrooms");
+		System.out.println(" ");
+System.out.println("-------City Map-------");
+System.out.println(" ");
+Scanner sc9 = new Scanner(System.in);
+System.out.println("Enter 'B' to return back");
+char m9=sc9.next().charAt(0);
+switch (m9) {
+case 'b': honeymoon();
+ break;
+case 'B': honeymoon();
+break;
+ default : System.out.println(" invalid Character");
+}
+		break;
+		case 10:   System.out.println("----------------------\n***-GOA-***\n----------------------\n ");
+		System.out.println("***What To Eat***");
+		System.out.println(" ");
+		System.out.println("1. Prem Lahori Vaishno Dhaba:\n$ INR 500 For Two\nFood: Indian\nTime: 7Am-11PM");
+		System.out.println("");
+		System.out.println("2. Sagar Ratna Restaurant:\n$ INR 500 For Two\nFood: South-Indian\nTime: 8Am-10.30PM");
+		System.out.println("");
+		System.out.println("3. Madhuban:\n$ INR 500 For Two\nFood: Indian, Chinese, Continental\nTime: 8Am-10.30PM");
+		System.out.println("==================================================");
+		System.out.println("***How To Reach***");
+		System.out.println("1. Flight\n2. Train Route\n3. Roadways");
+		System.out.println("==================================================");
+		System.out.println("***Where To Stay***");
+		System.out.println("1. Hotels\n2. Restrooms");
+		System.out.println(" ");
+System.out.println("-------City Map-------");
+System.out.println(" ");
+Scanner sc10 = new Scanner(System.in);
+System.out.println("Enter 'B' to return back");
+char m10=sc10.next().charAt(0);
+switch (m10) {
+case 'b': honeymoon();
+ break;
+case 'B': honeymoon();
+break;
+ default : System.out.println(" invalid Character");
+}
+		break;
+		case 11:   System.out.println("----------------------\n***-UDAIPUR-***\n----------------------\n ");
+		System.out.println("***What To Eat***");
+		System.out.println(" ");
+		System.out.println("1. Prem Lahori Vaishno Dhaba:\n$ INR 500 For Two\nFood: Indian\nTime: 7Am-11PM");
+		System.out.println("");
+		System.out.println("2. Sagar Ratna Restaurant:\n$ INR 500 For Two\nFood: South-Indian\nTime: 8Am-10.30PM");
+		System.out.println("");
+		System.out.println("3. Madhuban:\n$ INR 500 For Two\nFood: Indian, Chinese, Continental\nTime: 8Am-10.30PM");
+		System.out.println("==================================================");
+		System.out.println("***How To Reach***");
+		System.out.println("1. Flight\n2. Train Route\n3. Roadways");
+		System.out.println("==================================================");
+		System.out.println("***Where To Stay***");
+		System.out.println("1. Hotels\n2. Restrooms");
+		System.out.println(" ");
+System.out.println("-------City Map-------");
+System.out.println(" ");
+Scanner sc11 = new Scanner(System.in);
+System.out.println("Enter 'B' to return back");
+char m11=sc11.next().charAt(0);
+switch (m11) {
+case 'b': honeymoon();
+ break;
+case 'B': honeymoon();
+break;
+ default : System.out.println(" invalid Character");
+}
+		break;
+		case 12:   System.out.println("----------------------\n***-MUNNAR-***\n----------------------\n ");
+		System.out.println("***What To Eat***");
+		System.out.println(" ");
+		System.out.println("1. Prem Lahori Vaishno Dhaba:\n$ INR 500 For Two\nFood: Indian\nTime: 7Am-11PM");
+		System.out.println("");
+		System.out.println("2. Sagar Ratna Restaurant:\n$ INR 500 For Two\nFood: South-Indian\nTime: 8Am-10.30PM");
+		System.out.println("");
+		System.out.println("3. Madhuban:\n$ INR 500 For Two\nFood: Indian, Chinese, Continental\nTime: 8Am-10.30PM");
+		System.out.println("==================================================");
+		System.out.println("***How To Reach***");
+		System.out.println("1. Flight\n2. Train Route\n3. Roadways");
+		System.out.println("==================================================");
+		System.out.println("***Where To Stay***");
+		System.out.println("1. Hotels\n2. Restrooms");
+		System.out.println(" ");
+System.out.println("-------City Map-------");
+System.out.println(" ");
+Scanner sc12 = new Scanner(System.in);
+System.out.println("Enter 'B' to return back");
+char m12=sc12.next().charAt(0);
+switch (m12) {
+case 'b': honeymoon();
+ break;
+case 'B': honeymoon();
+break;
+ default : System.out.println(" invalid Character");
+}
+		break;
+		case 13:   System.out.println("----------------------\n***-KUMARAKOM-***\n----------------------\n ");
+		System.out.println("***What To Eat***");
+		System.out.println(" ");
+		System.out.println("1. Prem Lahori Vaishno Dhaba:\n$ INR 500 For Two\nFood: Indian\nTime: 7Am-11PM");
+		System.out.println("");
+		System.out.println("2. Sagar Ratna Restaurant:\n$ INR 500 For Two\nFood: South-Indian\nTime: 8Am-10.30PM");
+		System.out.println("");
+		System.out.println("3. Madhuban:\n$ INR 500 For Two\nFood: Indian, Chinese, Continental\nTime: 8Am-10.30PM");
+		System.out.println("==================================================");
+		System.out.println("***How To Reach***");
+		System.out.println("1. Flight\n2. Train Route\n3. Roadways");
+		System.out.println("==================================================");
+		System.out.println("***Where To Stay***");
+		System.out.println("1. Hotels\n2. Restrooms");
+		System.out.println(" ");
+System.out.println("-------City Map-------");
+System.out.println(" ");
+Scanner sc13 = new Scanner(System.in);
+System.out.println("Enter 'B' to return back");
+char m13=sc13.next().charAt(0);
+switch (m13) {
+case 'b': honeymoon();
+ break;
+case 'B': honeymoon();
+break;
+ default : System.out.println(" invalid Character");
+}
+		break;
+		case 14:  System.out.println("----------------------\n***-ALLEPPEY-***\n----------------------\n ");
+		System.out.println("***What To Eat***");
+		System.out.println(" ");
+		System.out.println("1. Prem Lahori Vaishno Dhaba:\n$ INR 500 For Two\nFood: Indian\nTime: 7Am-11PM");
+		System.out.println("");
+		System.out.println("2. Sagar Ratna Restaurant:\n$ INR 500 For Two\nFood: South-Indian\nTime: 8Am-10.30PM");
+		System.out.println("");
+		System.out.println("3. Madhuban:\n$ INR 500 For Two\nFood: Indian, Chinese, Continental\nTime: 8Am-10.30PM");
+		System.out.println("==================================================");
+		System.out.println("***How To Reach***");
+		System.out.println("1. Flight\n2. Train Route\n3. Roadways");
+		System.out.println("==================================================");
+		System.out.println("***Where To Stay***");
+		System.out.println("1. Hotels\n2. Restrooms");
+		System.out.println(" ");
+System.out.println("-------City Map-------");
+System.out.println(" ");
+Scanner sc14 = new Scanner(System.in);
+System.out.println("Enter 'B' to return back");
+char m14=sc14.next().charAt(0);
+switch (m14) {
+case 'b': honeymoon();
+ break;
+case 'B': honeymoon();
+break;
+ default : System.out.println(" invalid Character");
+}
+		break;
+		case 15:	  System.out.println("----------------------\n***-OOTY-***\n----------------------\n ");
+		System.out.println("***What To Eat***");
+		System.out.println(" ");
+		System.out.println("1. Prem Lahori Vaishno Dhaba:\n$ INR 500 For Two\nFood: Indian\nTime: 7Am-11PM");
+		System.out.println("");
+		System.out.println("2. Sagar Ratna Restaurant:\n$ INR 500 For Two\nFood: South-Indian\nTime: 8Am-10.30PM");
+		System.out.println("");
+		System.out.println("3. Madhuban:\n$ INR 500 For Two\nFood: Indian, Chinese, Continental\nTime: 8Am-10.30PM");
+		System.out.println("==================================================");
+		System.out.println("***How To Reach***");
+		System.out.println("1. Flight\n2. Train Route\n3. Roadways");
+		System.out.println("==================================================");
+		System.out.println("***Where To Stay***");
+		System.out.println("1. Hotels\n2. Restrooms");
+		System.out.println(" ");
+System.out.println("-------City Map-------");
+System.out.println(" ");
+Scanner sc15 = new Scanner(System.in);
+System.out.println("Enter 'B' to return back");
+char m15=sc15.next().charAt(0);
+switch (m15) {
+case 'b': honeymoon();
+ break;
+case 'B': honeymoon();
+break;
+ default : System.out.println(" invalid Character");
+}
+		break;
+	
+		default: System.out.println("Invalid number, please enter valid number(:");
+		}
+	}
+	
+}
+class States extends Favourite {
+	
+	public  void states() {
+		System.out.println("===========================================================");
+		System.out.println("------------Choose your Favourite States to visit:---------");
+		System.out.println("===========================================================");
+		System.out.println("1. ANDRA PRADESH\n2. ARUNACHAL PRADESH\n3. ASSAM\n4. BIHAR\n5. CHATTISGARH\n6. GOA\n7. GUJRAT\n"
+				+ "8. HARYANA\n9. HIMACHAL PRADESH\n10. JHARKHAND\n11. KARNATKA\n12. KERLA\n13. MADHYA PARDESH\n"
+				+ "14. MAHARASHTRA\n15. MANIPUR\n16. MIZORAM\n17. ODISHA\n18. PUNJAB\n19. RAJASHTHAN\n20. SIKKIM\n"
+				+ "21. TAMILNADU\n22. TELANGANA\n23. TRIPURA\n24. UTTRAKHAND\n25. UTTAR PRADESH\n26. WEST BENGAL\n"
+				+ "27. ANDAMAN AND NICOBAR ISLANDS\n28. CHANDIGARH\n29. DELHI\n30. JAMMU & KASHMIR\n31. LADAKH");
+		System.out.println(" ");
+		System.out.println("=======================================");
+		System.out.println("-----Enter number to choose States-----");
+		System.out.println("=======================================");
+		System.out.println(" ");
+		Scanner sc = new Scanner(System.in);
+		int n=sc.nextInt();
+		Destination d=new Destination(); // object for Destination class
+		switch(n) {
+		case 1: System.out.println("****************************");
+			    System.out.println("WELCOME TO ANDRA PRADESH(:");
+		        System.out.println("****************************");
+		         d.andraPradesh();
+		break;
+		case 2: System.out.println("****************************");
+			System.out.println("WELCOME TO ARUNACHAL PRADESH(:");
+			System.out.println("****************************");
+			d.arunachalPradesh();
+		break;
+		case 3: System.out.println("****************************");
+			System.out.println("WELCOME TO ASSAM(:");
+			System.out.println("****************************");
+			d.assam();
+		break;
+		case 4: System.out.println("****************************");
+			System.out.println("WELCOME TO BIHAR(:");
+			System.out.println("****************************");
+			d.bihar();
+		break;
+		case 5:System.out.println("****************************");
+			System.out.println("WELCOME TO CHATTISGARH(:");
+			System.out.println("****************************");
+			d.chhattisgarh();
+		break;
+		case 6:System.out.println("****************************");
+			System.out.println("WELCOME TO GOA(:");
+			System.out.println("****************************");
+			d.goa();
+		break;
+		case 7: System.out.println("****************************");
+			System.out.println("WELCOME TO GUJRAT(:");
+			System.out.println("****************************");
+			d.gujrat();
+		break;
+		case 8: System.out.println("****************************");
+			System.out.println("WELCOME TO HARYANA(:");
+			System.out.println("****************************");
+			d.haryana();
+		break;
+		case 9: System.out.println("****************************");
+			System.out.println("WELCOME TO HIMACHAL PRADESH(:");
+			System.out.println("****************************");
+			d.himachalpradesh();
+		break;
+		case 10: System.out.println("****************************");
+			System.out.println("WELCOME TO JHARKHAND(:");
+			System.out.println("****************************");
+			d.jharkhand();
+		break;
+		case 11: System.out.println("****************************");
+			System.out.println("WELCOME TO KARNATKA(:");
+			System.out.println("****************************");
+			d.karnatka();
+		break;
+		case 12: System.out.println("****************************");
+			System.out.println("WELCOME TO KERLA(:");
+			System.out.println("****************************");
+			d.kerla();
+		break;
+		case 13: System.out.println("****************************");
+			System.out.println("WELCOME TO MADHYA PRADESH(:");
+			System.out.println("****************************");
+			d.madhyaPradesh();
+		break;
+		case 14:System.out.println("****************************");
+			System.out.println("WELCOME TO MAHARASHTRA(:");
+			System.out.println("****************************");
+			d.maharashtra();
+		break;
+		case 15:System.out.println("****************************");
+			System.out.println("WELCOME TO MANIPUR(:");
+			System.out.println("****************************");
+			d.manipur();
+		break;
+		case 16: System.out.println("****************************");
+			System.out.println("WELCOME TO MIZORAM(:");
+			System.out.println("****************************");
+			d.mizoram();
+		break;
+		case 17: System.out.println("****************************");
+			System.out.println("WELCOME TO ODISHA(:");
+			System.out.println("****************************");
+			d.odisha();
+		break;
+		case 18:System.out.println("****************************");
+			System.out.println("WELCOME TO PUNJAB(:");
+			System.out.println("****************************");
+			d.punjab();
+		break;
+		case 19: System.out.println("****************************");
+			System.out.println("WELCOME TO RAJASHTHAN(:");
+			System.out.println("****************************");
+			d.rajashthan();
+		break;
+		case 20: System.out.println("****************************");
+			System.out.println("WELCOME TO SIKKIM(:");
+			System.out.println("****************************");
+			d.sikkim();
+		break;
+		case 21: System.out.println("****************************");
+			System.out.println("WELCOME TO TAMILNADU(:");
+			System.out.println("****************************");
+			d.tamilnadu();
+		break;
+		case 22: System.out.println("****************************");
+			System.out.println("WELCOME TO TELANGANA(:");
+			System.out.println("****************************");
+			d.telangana();
+		break;
+		case 23:System.out.println("****************************");
+			System.out.println("WELCOME TO TRIPURA(:");
+			System.out.println("****************************");
+			d.tripur();
+		break;
+		case 24: System.out.println("****************************");
+			System.out.println("WELCOME TO UTTRAKHAND(:");
+			System.out.println("****************************");
+			d.uttrakhand();
+		break;
+		case 25: System.out.println("****************************");
+			System.out.println("WELCOME TO UTTAR PRADESH(:");
+			System.out.println("****************************");
+			d.uttarPradesh();
+		break;
+		case 26: System.out.println("****************************");
+			System.out.println("WELCOME TO WEST BENGAL(:");
+			System.out.println("****************************");
+			d.westBengal();
+		break;
+		case 27: System.out.println("****************************");
+			System.out.println("WELCOME TO  ANDAMAN AND NICOBAR ISLANDS(:");
+			System.out.println("****************************");
+			d.aani();
+		break;
+		case 28: System.out.println("****************************");
+			System.out.println("WELCOME TO CHANDIGARH(:");
+			System.out.println("****************************");
+			d.chandigarh();
+		break;
+		case 29: System.out.println("****************************");
+			System.out.println("WELCOME TO DELHI(:");
+			System.out.println("****************************");
+			d.delhi();
+		break;
+		case 30:System.out.println("****************************");
+			System.out.println("WELCOME TO JAMMU & KASHMIR(:");
+			System.out.println("****************************");
+			d.j$k();
+		break;
+		case 31: System.out.println("****************************");
+			System.out.println("WELCOME TO LADHAK(:");
+			System.out.println("****************************");
+			d.ladhak();
+		break;
+		
+		default : System.out.println(" Please Choose Valid Number");
+		}
+	}
+	}
+// extended class
+	class Destination extends States{
+		
+		public void andraPradesh() {
+			System.out.println("==================================================================");
+			System.out.println("------Choose your favourite place to visit in Andra Pradesh:------");
+			System.out.println("==================================================================");
+			System.out.println(" ");
+			System.out.println("1. Visakhapatnam\n2. Tirupati\n3. Vijayawada\n4. Nellore\n5. Chittoor"
+					+ "\n6. Anantapur\n7. Kurnool\n8. Kadapa\n9. Srikalahasti\n10. Ongole"
+					+ "\n11. Puttaparthi\n12. Rajahmundry\n13. Amalapuram\n14. Srikakulam\n15. Kakinada");
+			System.out.println(" ");
+			States s=new Destination();// Up casting
+			Scanner sc = new Scanner(System.in);
+			System.out.println("Enter 'B' to return back");
+			char m=sc.next().charAt(0);
+			switch (m) {
+			case 'b': states();
+			 break;
+			case 'B': states();
+			break;
+			 default : System.out.println(" invalid Character");
+			}
+		}
+		public void arunachalPradesh() {
+			System.out.println("=====================================================================");
+			System.out.println("------Choose your favourite place to visit in Arunachal Pradesh:------");
+			System.out.println("======================================================================");
+			System.out.println(" ");
+			System.out.println("1. Dong Valley\n2. Namdapha National Park\n3. Upper Dibang Valley\n4. Talley Valley\n5. Mechuka Valley"
+					+ "\n6. Bomdila\n7. Itanagar\n8. Tawang\n9. Ziro Valley\n10. Sela Pass"
+					+ "\n11. Dirang\n12. Sangti\n13. Changlang\n14. Bum La Pass\n15. Aalo");
+			System.out.println(" ");
+			States s=new Destination();// Up casting
+			Scanner sc = new Scanner(System.in);
+			System.out.println("Enter 'B' to return back");
+			char m=sc.next().charAt(0);
+			switch (m) {
+			case 'b': states();
+			 break;
+			case 'B': states();
+			break;
+			 default : System.out.println(" invalid Character");
+			}
+		}
+		public void assam() {
+			System.out.println("==========================================================");
+			System.out.println("------Choose your favourite place to visit in Assam:------");
+			System.out.println("==========================================================");
+			System.out.println(" ");
+			System.out.println("1. Kaziranga National Park\n2. Manas National Park\n3. Kamakhya Templea\n4. Hoollongapar Gibbon Wildlife Sanctuary\n5. Kakochang Waterfalls"
+					+ "\n6. Pobitora Wildlife Sanctuary\n7. Umananda Island\n8. Orang National Park\n9. Guwahati Planetarium\n10. Padam Pukhuri"
+					+ "\n11. Haflong Hill\n12. Panimoor Falls\n13. Silchar\n14. Tinsukia\n15. 15. Darang");
+			System.out.println(" ");
+			States s=new Destination();// Up casting
+			Scanner sc = new Scanner(System.in);
+			System.out.println("Enter 'B' to return back");
+			char m=sc.next().charAt(0);
+			switch (m) {
+			case 'b': states();
+			 break;
+			case 'B': states();
+			break;
+			 default : System.out.println(" invalid Character");
+			}
+		}
+		public void bihar() {
+			System.out.println("==========================================================");
+			System.out.println("------Choose your favourite place to visit in Bihar:------");
+			System.out.println("==========================================================");
+			System.out.println(" ");
+			System.out.println("1.Gaya\n2. Patna\n3. Nalanda\n4. Vaishali\n5. Munger"
+					+ "\n6. Navlakha Palace of Rajnagar\n7. Rajgir’s World Peace Pagoda\n8. Madhubani\n9. Jalmandir, Pawapuri\n10. Vulture Peak"
+					+ "\n11. Sher Shah Suri Tomb\n12. Kanwar Lake Bird Sanctuary\n13. Kesaria Stupa\n14. Barabar Caves\n15. Thai Monastery");
+			System.out.println(" ");
+			States s=new Destination();// Up casting
+			Scanner sc = new Scanner(System.in);
+			System.out.println("Enter 'B' to return back");
+			char m=sc.next().charAt(0);
+			switch (m) {
+			case 'b': states();
+			 break;
+			case 'B': states();
+			break;
+			 default : System.out.println(" invalid Character");
+			}
+		}
+		public void chhattisgarh() {
+			System.out.println("=================================================================");
+			System.out.println("------Choose your favourite place to visit in Chhattisgarh:------");
+			System.out.println("=================================================================");
+			System.out.println(" ");
+			System.out.println("1.Barnawapara Wildlife Sanctuary\n2. Shri Rajiv Lochan Mandir\n3. Danteshwari Temple\n4. Chitrakot Waterfalls\n5. Rajeev Smriti Van"
+					+ "\n6. Mahakoshal Art Gallery\n7. Purkhauti Muktangan\n8. Bhoramdeo Temple\n9. Tirathgarh Falls\n10. Kanger Valley National Park "
+					+ "\n11. Raipur City\n12. Rajim\n13. Maitri Bagh\n14. Dongargarh\n15. Bhuteshwar Shivling");
+			System.out.println(" ");
+			States s=new Destination();// Up casting
+			Scanner sc = new Scanner(System.in);
+			System.out.println("Enter 'B' to return back");
+			char m=sc.next().charAt(0);
+			switch (m) {
+			case 'b': states();
+			 break;
+			case 'B': states();
+			break;
+			 default : System.out.println(" invalid Character");
+			}
+		}
+		public void goa() {
+			System.out.println("========================================================");
+			System.out.println("------Choose your favourite place to visit in Goa:------");
+			System.out.println("========================================================");
+			System.out.println(" ");
+			System.out.println("1.Popular Beaches\n2. Beaches Off the Beaten Path\n3. Tanshikar's Working Spice Farm\n4. Portuguese-Indian Restaurants\n5. Basilica de Bom Jesus"
+					+ "\n6. Dudhsagar Falls\n7. Anjuna Market\n8. Church of Our Lady of the Immaculate Conception\n9. Braganza House\n10. Mahadev Temple "
+					+ "\n11. Palácio do Deão\n12. Mangeshi Temple\n13. Fontainhas\n14. Bhagwan Mahavir Wildlife Sanctuary\n15. Reis Magos Fort");
+			System.out.println(" ");
+			States s=new Destination();// Up casting
+			Scanner sc = new Scanner(System.in);
+			System.out.println("Enter 'B' to return back");
+			char m=sc.next().charAt(0);
+			switch (m) {
+			case 'b': states();
+			 break;
+			case 'B': states();
+			break;
+			 default : System.out.println(" invalid Character");
+			}
+		}
+		public void gujrat() {
+			System.out.println("===========================================================");
+			System.out.println("------Choose your favourite place to visit in Gujrat:------");
+			System.out.println("===========================================================");
+			System.out.println(" ");
+			System.out.println("1.Statue Of Unity\n2. Kankaria Lake\n3. Jhulta Minar\n4. Lothal\n5. Gir National Park"
+					+ "\n6. Somnath Jyotirlinga Temple\n7. Tarnetar\n8. Gandhinagar\n9. Dumas Beach\n10. Mandvi Beach "
+					+ "\n11. Rann Of Kutch\n12. Ahmedabad\n13. Saputara\n14. Laxmi Vilas Palace\n15. Dwarka");
+			System.out.println(" ");
+			States s=new Destination();// Up casting
+			Scanner sc = new Scanner(System.in);
+			System.out.println("Enter 'B' to return back");
+			char m=sc.next().charAt(0);
+			switch (m) {
+			case 'b': states();
+			 break;
+			case 'B': states();
+			break;
+			 default : System.out.println(" invalid Character");
+			}
+		}
+		public void haryana() {
+			System.out.println("===========================================================");
+			System.out.println("------Choose your favourite place to visit in Haryana:------");
+			System.out.println("===========================================================");
+			System.out.println(" ");
+			System.out.println("1.Gurgaon\n2. Chandigarh\n3. Kurukshetra\n4. Panchkula\n5. Faridabad"
+					+ "\n6. Panipat\n7. Damdama Lake\n8. Morni Hills\n9. Sultanpur Bird Sanctuary\n10. Rohtak "
+					+ "\n11. Nuh\n12. AhmedabadKarnal\n13. Manesar\n14. Surajkund Crafts Fair\n15. Pinjore Mango Festival");
+			System.out.println(" ");
+			States s=new Destination();// Up casting
+			Scanner sc = new Scanner(System.in);
+			System.out.println("Enter 'B' to return back");
+			char m=sc.next().charAt(0);
+			switch (m) {
+			case 'b': states();
+			 break;
+			case 'B': states();
+			break;
+			 default : System.out.println(" invalid Character");
+			}
+		}
+		public void himachalpradesh() {
+			System.out.println("=====================================================================");
+			System.out.println("------Choose your favourite place to visit in Himachal Pradesh:------");
+			System.out.println("=====================================================================");
+			System.out.println(" ");
+			System.out.println("1.Kullu\n2. Manali\n3. Shimla\n4. ChambaPanchkula\n5. Dharamshala"
+					+ "\n6. Dalhousie\n7. Kangra\n8. Kasauli\n9. Hamirpur\n10. Parwanoo "
+					+ "\n11. Solan\n12. Pragpur\n13. Sirmaur\n14. Chail\n15. Una");
+			System.out.println(" ");
+			States s=new Destination();// Up casting
+			Scanner sc = new Scanner(System.in);
+			System.out.println("Enter 'B' to return back");
+			char m=sc.next().charAt(0);
+			switch (m) {
+			case 'b': states();
+			 break;
+			case 'B': states();
+			break;
+			 default : System.out.println(" invalid Character");
+			}
+		}
+		public void jharkhand() {
+			System.out.println("==============================================================");
+			System.out.println("------Choose your favourite place to visit in Jharkhand:------");
+			System.out.println("==============================================================");
+			System.out.println(" ");
+			System.out.println("1.Tagore Hill\n2.Pahari Mandir\n3. Kanke Dam\n4. Jagannath Temple\n5. Nakshatra Van"
+					+ "\n6. Ranchi Lake\n7. Biodiversity Park\n8. Rock Garden\n9. Sidhu Kanhu Park\n10. Patratu Valley "
+					+ "\n11. Patratu Valley\n12. Dassam Waterfalls\n13. Hundru Waterfalls\n14. Jonha Waterfalls\n15. Jubilee Park");
+			System.out.println(" ");
+			States s=new Destination();// Up casting
+			Scanner sc = new Scanner(System.in);
+			System.out.println("Enter 'B' to return back");
+			char m=sc.next().charAt(0);
+			switch (m) {
+			case 'b': states();
+			 break;
+			case 'B': states();
+			break;
+			 default : System.out.println(" invalid Character");
+			}
+		}
+		public void karnatka() {
+			System.out.println("==============================================================");
+			System.out.println("------Choose your favourite place to visit in  Karnatka:------");
+			System.out.println("==============================================================");
+			System.out.println(" ");
+			System.out.println("1.Bangalore \n2.Bandipur National Park\n3. Coorg\n4. Hampi \n5. Mysore "
+					+ "\n6. Shivanasamudra Falls\n7. Gokarna \n8. Belur and Halebidu\n9. Jog Falls\n10. Dandeli "
+					+ "\n11. Udupi \n12. Nandi Hills\n13. Chitradurga Fort\n14. Bijapur \n15. Chikmagalur");
+			System.out.println(" ");
+			States s=new Destination();// Up casting
+			Scanner sc = new Scanner(System.in);
+			System.out.println("Enter 'B' to return back");
+			char m=sc.next().charAt(0);
+			switch (m) {
+			case 'b': states();
+			 break;
+			case 'B': states();
+			break;
+			 default : System.out.println(" invalid Character");
+			}
+		}
+		public void kerla() {
+			System.out.println("===========================================================");
+			System.out.println("------Choose your favourite place to visit in  Kerla:------");
+			System.out.println("===========================================================");
+			System.out.println(" ");
+			System.out.println("1.Kumarakom \n2. Varkala\n3. Periyar National Park\n4. Thiruvananthapuram  \n5. Alappuzha "
+					+ "\n6. Munnar\n7. Wayanad \n8. Kochi\n9. Bekal Fort\n10. Vagamon "
+					+ "\n11. Athirappally and Vazhachal Waterfalls \n12. Kadalundi Bird Sanctuary\n13. Neyyar Wildlife Sanctuary\n14. Kovalam Beach \n15. Chikmagalur");
+			System.out.println(" ");
+			States s=new Destination();// Up casting
+			Scanner sc = new Scanner(System.in);
+			System.out.println("Enter 'B' to return back");
+			char m=sc.next().charAt(0);
+			switch (m) {
+			case 'b': states();
+			 break;
+			case 'B': states();
+			break;
+			 default : System.out.println(" invalid Character");
+			}
+		}
+		public void madhyaPradesh() {
+			System.out.println("====================================================================");
+			System.out.println("------Choose your favourite place to visit in  Madhya Pardesh:------");
+			System.out.println("====================================================================");
+			System.out.println(" ");
+			System.out.println("1. Gwalior \n2. Khajuraho\n3. Orchha\n4. Bandhavgarh National Park\n5. Sanchi "
+					+ "\n6. Pachmarhi\n7. Kanha National Park \n8. Pench National Park\n9. Bhimbetka\n10. Panna National Park "
+					+ "\n11. Bhopal\n12. Indore\n13. Jabalpur\n14. Mandu \n15. Omkareshwar");
+			System.out.println(" ");
+			States s=new Destination();// Up casting
+			Scanner sc = new Scanner(System.in);
+			System.out.println("Enter 'B' to return back");
+			char m=sc.next().charAt(0);
+			switch (m) {
+			case 'b': states();
+			 break;
+			case 'B': states();
+			break;
+			 default : System.out.println(" invalid Character");
+			}
+		}
+		public void maharashtra() {
+			System.out.println("=================================================================");
+			System.out.println("------Choose your favourite place to visit in  Maharashtra:------");
+			System.out.println("=================================================================");
+			System.out.println(" ");
+			System.out.println("1. Mumbai \n2. Mahabaleshwar\n3. Pune\n4. Khandala\n5. Lonavala "
+					+ "\n6.  Lavasa\n7. Matheran\n8. Panchgani\n9. Alibaug\n10. Karnala"
+					+ "\n11. Satara\n12. Ratnagiri\n13. Mulshi\n14. Shirdi \n15. Aurangabad");
+			System.out.println(" ");
+			States s=new Destination();// Up casting
+			Scanner sc = new Scanner(System.in);
+			System.out.println("Enter 'B' to return back");
+			char m=sc.next().charAt(0);
+			switch (m) {
+			case 'b': states();
+			 break;
+			case 'B': states();
+			break;
+			 default : System.out.println(" invalid Character");
+			}
+		}
+		public void manipur() {
+			System.out.println("=============================================================");
+			System.out.println("------Choose your favourite place to visit in  Manipur:------");
+			System.out.println("=============================================================");
+			System.out.println(" ");
+			System.out.println("1. Loktak Lake \n2. Keibul Lamjao National Park\n3. Tharon Cave\n4. Kangla Fort\n5. Singda Dam "
+					+ "\n6.  INA Memorial Complex\n7. Shree Govindajee Temple\n8. Manipur Zoological Garden\n9. Manipur State Museum\n10. Rasmancha "
+					+ "\n11. Jorebangla Temple\n12. Dal Madol\n13. Leimaram Waterfall\n14. Dzukou Valley \n15. Waithou Lake");
+			System.out.println(" ");
+			States s=new Destination();// Up casting
+			Scanner sc = new Scanner(System.in);
+			System.out.println("Enter 'B' to return back");
+			char m=sc.next().charAt(0);
+			switch (m) {
+			case 'b': states();
+			 break;
+			case 'B': states();
+			break;
+			 default : System.out.println(" invalid Character");
+			}
+		}
+		public void mizoram() {
+			System.out.println("=============================================================");
+			System.out.println("------Choose your favourite place to visit in  Mizoram:------");
+			System.out.println("=============================================================");
+			System.out.println(" ");
+			System.out.println("1. Aizawl \n2. Lunglei\n3. Mamit\n4. Kolasib\n5. Reiek "
+					+ "\n6. Vantawng Waterfalls\n7. Falkawn Village\n8. Phawngpui Peak\n9. Tamdil Lake\n10. Hmuifang "
+					+ "\n11. Serchhip\n12. Champhai\n13. Saiha\n14. Murlen National Park \n15. Dampa Tiger Reserve");
+			System.out.println(" ");
+			States s=new Destination();// Up casting
+			Scanner sc = new Scanner(System.in);
+			System.out.println("Enter 'B' to return back");
+			char m=sc.next().charAt(0);
+			switch (m) {
+			case 'b': states();
+			 break;
+			case 'B': states();
+			break;
+			 default : System.out.println(" invalid Character");
+			}
+		}
+		public void odisha() {
+			System.out.println("===========================================================");
+			System.out.println("------Choose your favourite place to visit in Odisha:------");
+			System.out.println("===========================================================");
+			System.out.println(" ");
+			System.out.println("1. Bhubaneswar \n2. Puri\n3. Cuttack\n4. Konark\n5. Chandipur "
+					+ "\n6. Baripada\n7. Dhauli\n8. Rayagada\n9. Pipili\n10. Bhadrak "
+					+ "\n11. Koraput\n12. Kalahandi\n13. Jajpur\n14. Debagarh \n15. Bhitarkarnika National Park");
+			System.out.println(" ");
+			States s=new Destination();// Up casting
+			Scanner sc = new Scanner(System.in);
+			System.out.println("Enter 'B' to return back");
+			char m=sc.next().charAt(0);
+			switch (m) {
+			case 'b': states();
+			 break;
+			case 'B': states();
+			break;
+			 default : System.out.println(" invalid Character");
+			}
+		}
+		public void punjab() {
+			System.out.println("===========================================================");
+			System.out.println("------Choose your favourite place to visit in Punjab:------");
+			System.out.println("===========================================================");
+			System.out.println(" ");
+			System.out.println("1. Amritsar \n2. Chandigarh\n3. Pathankot\n4. Patiala\n5. Jalandhar "
+					+ "\n6. Ludhiana\n7. Mohali\n8. Sirhind\n9. Gurdaspur\n10. Bhatinda "
+					+ "\n11. Golden Temple\n12. Firozpur\n13. Mansa\n14. Kapurthala \n15. Roopnagar");
+			System.out.println(" ");
+			States s=new Destination();// Up casting
+			Scanner sc = new Scanner(System.in);
+			System.out.println("Enter 'B' to return back");
+			char m=sc.next().charAt(0);
+			switch (m) {
+			case 'b': states();
+			 break;
+			case 'B': states();
+			break;
+			 default : System.out.println(" invalid Character");
+			}
+		}
+		public void rajashthan() {
+			System.out.println("===============================================================");
+			System.out.println("------Choose your favourite place to visit in Rajashthan:------");
+			System.out.println("===============================================================");
+			System.out.println(" ");
+			System.out.println("1. Jaipur \n2. Jodhpur\n3. Udaipur \n4. Jaisalmer\n5. Bikaner "
+					+ "\n6. Pushkar\n7. Mount Abu\n8. Ajmer\n9. Chittorgarh\n10. Ranthambore "
+					+ "\n11. Keoladeo National Park\n12. Alwar\n13. Kumbhalgarh\n14. Neemrana Fort Palace \n15. Mandawa");
+			System.out.println(" ");
+			States s=new Destination();// Up casting
+			Scanner sc = new Scanner(System.in);
+			System.out.println("Enter 'B' to return back");
+			char m=sc.next().charAt(0);
+			switch (m) {
+			case 'b': states();
+			 break;
+			case 'B': states();
+			break;
+			 default : System.out.println(" invalid Character");
+			}
+		}
+		public void sikkim() {
+			System.out.println("===========================================================");
+			System.out.println("------Choose your favourite place to visit in Sikkim:------");
+			System.out.println("===========================================================");
+			System.out.println(" ");
+			System.out.println("1. Gangtok \n2. Yuksom\n3. Tsomgo Lake \n4. Nathula Pass\n5. Pelling "
+					+ "\n6. Lachung\n7. Ravangla\n8. Rumtek Monastery\n9. Namchi\n10. Do-Drul Chorten "
+					+ "\n11. Jawaharlal Nehru Botanical Garden\n12. Zuluk\n13. Namgyal Institute of Tibetology\n14. Yumthang Valley \n15. Gurudongmar");
+			System.out.println(" ");
+			States s=new Destination();// Up casting
+			Scanner sc = new Scanner(System.in);
+			System.out.println("Enter 'B' to return back");
+			char m=sc.next().charAt(0);
+			switch (m) {
+			case 'b': states();
+			 break;
+			case 'B': states();
+			break;
+			 default : System.out.println(" invalid Character");
+			}
+		}
+		public void tamilnadu() {
+			System.out.println("==============================================================");
+			System.out.println("------Choose your favourite place to visit in Tamilnadu:------");
+			System.out.println("==============================================================");
+			System.out.println(" ");
+			System.out.println("1. Chennai \n2. Rameshwaram\n3. Kodaikanal \n4. Ooty\n5. Mahabalipuram "
+					+ "\n6. Hogenakkal\n7. Kanyakumari\n8. Kanchipuram\n9. Madurai\n10. Coimbatore "
+					+ "\n11. Thanjavur\n12. Coonoor\n13. Velankanni\n14. Kolli Malai \n15. Yercaud");
+			System.out.println(" ");
+			States s=new Destination();// Up casting
+			Scanner sc = new Scanner(System.in);
+			System.out.println("Enter 'B' to return back");
+			char m=sc.next().charAt(0);
+			switch (m) {
+			case 'b': states();
+			 break;
+			case 'B': states();
+			break;
+			 default : System.out.println(" invalid Character");
+			}
+		}
+		public void telangana() {
+			System.out.println("==============================================================");
+			System.out.println("------Choose your favourite place to visit in Telangana:------");
+			System.out.println("==============================================================");
+			System.out.println(" ");
+			System.out.println("1. Ananthagiri Hills \n2. Hyderabad\n3. Adilabad \n4. Warangal\n5. Sangareddy "
+					+ "\n6. Nizamabad\n7. Khammam\n8. Medak Fort\n9. Ramagundam\n10. Karimnagar "
+					+ "\n11. Nalgonda\n12. Rangareddy\n13. Alampur\n14. Bhadrachalam \n15. Sircilla");
+			System.out.println(" ");
+			States s=new Destination();// Up casting
+			Scanner sc = new Scanner(System.in);
+			System.out.println("Enter 'B' to return back");
+			char m=sc.next().charAt(0);
+			switch (m) {
+			case 'b': states();
+			 break;
+			case 'B': states();
+			break;
+			 default : System.out.println(" invalid Character");
+			}
+		}
+		public void tripur() {
+			System.out.println("===========================================================");
+			System.out.println("------Choose your favourite place to visit in Tripur:------");
+			System.out.println("===========================================================");
+			System.out.println(" ");
+			System.out.println("1. Thirumoorthy Hills \n2. Amaravathi Dam\n3. Panjalinga Aruvi aka Thirumoorthy Falls \n4. Avinashi Lingeswarar Temple\n5. Amanalingeswarar Temple "
+					+ "\n6. Chinnar \n7. Udumalai Tirupati\n8. Amaravathi Crocodile Park \n9. Sivanmalai \n10. Sukreswarar Temple "
+					+ "\n11. Dharapuram Temples \n12. Amaravathi River At Elayamuthur\n13. Ayyan Temple\n14. Manupatti \n15. Pethappampatti");
+			System.out.println(" ");
+			States s=new Destination();// Up casting
+			Scanner sc = new Scanner(System.in);
+			System.out.println("Enter 'B' to return back");
+			char m=sc.next().charAt(0);
+			switch (m) {
+			case 'b': states();
+			 break;
+			case 'B': states();
+			break;
+			 default : System.out.println(" invalid Character");
+			}
+		}
+		public void uttrakhand() {
+			System.out.println("===============================================================");
+			System.out.println("------Choose your favourite place to visit in Uttrakhand:------");
+			System.out.println("===============================================================");
+			System.out.println(" ");
+			System.out.println("1. Dehradun \n2. Mussoorie\n3. Nainital \n4. Jim Corbett\n5. Rishikesh"
+					+ "\n6. Haridwar \n7. Almora\n8. Auli \n9. Chopta \n10. Lansdowne "
+					+ "\n11. Valley of Flowers \n12. Kanatal\n13. Mukteshwar\n14. Binsar \n15. Munsiyari");
+			System.out.println(" ");
+			States s=new Destination();// Up casting
+			Scanner sc = new Scanner(System.in);
+			System.out.println("Enter 'B' to return back");
+			char m=sc.next().charAt(0);
+			switch (m) {
+			case 'b': states();
+			 break;
+			case 'B': states();
+			break;
+			 default : System.out.println(" invalid Character");
+			}
+		}
+		public void uttarPradesh() {
+			System.out.println("==================================================================");
+			System.out.println("------Choose your favourite place to visit in Uttar Pradesh:------");
+			System.out.println("==================================================================");
+			System.out.println(" ");
+			System.out.println("1. Agra \n2. Varanasi\n3. Vrindavan \n4. Lucknow\n5. Prayagraj "
+					+ "\n6. Sarnath \n7. Mathura\n8. Fatehpur Sikri \n9. Vindhyachal  \n10. Ayodhya "
+					+ "\n11. Jhansi \n12. Hastinapur\n13. Dudhwa National Park\n14. Noida \n15. Meerut");
+			System.out.println(" ");
+			States s=new Destination();// Up casting
+			Scanner sc = new Scanner(System.in);
+			System.out.println("Enter 'B' to return back");
+			char m=sc.next().charAt(0);
+			switch (m) {
+			case 'b': states();
+			 break;
+			case 'B': states();
+			break;
+			 default : System.out.println(" invalid Character");
+			}
+		}
+		public void westBengal() {
+			System.out.println("================================================================");
+			System.out.println("------Choose your favourite place to visit in West Bengal:------");
+			System.out.println("================================================================");
+			System.out.println(" ");
+			System.out.println("1. Kolkata \n2. Shantiniketan\n3. Hooghly \n4. Sundarbans National Park\n5. Kalimpong "
+					+ "\n6. Darjeeling \n7. Bankura\n8. Midnapore \n9. Siliguri  \n10. Bishnupur "
+					+ "\n11. Mayapur \n12. Murshidabad\n13. Kamarpukur\n14. Jalpaiguri \n15. Cooch Behar");
+			System.out.println(" ");
+			States s=new Destination();// Up casting
+			Scanner sc = new Scanner(System.in);
+			System.out.println("Enter 'B' to return back");
+			char m=sc.next().charAt(0);
+			switch (m) {
+			case 'b': states();
+			 break;
+			case 'B': states();
+			break;
+			 default : System.out.println(" invalid Character");
+			}
+		}
+		public void aani() {
+			System.out.println("================================================================================");
+			System.out.println("------Choose your favourite place to visit in Andaman and Nicobar Islands:------");
+			System.out.println("================================================================================");
+			System.out.println(" ");
+			System.out.println("1. Ross Island \n2. Cellular Jail\n3. makruzz \n4. Radhanagar Beach\n5. Barren Island Volcano "
+					+ "\n6. Jolly Buoy Island \n7. Mahatma Gandhi Marine National Park\n8. Chidiya Tapu \n9. Bharatpur Beach  \n10. Laxamanpur Beach ");
+			System.out.println(" ");
+			States s=new Destination();// Up casting
+			Scanner sc = new Scanner(System.in);
+			System.out.println("Enter 'B' to return back");
+			char m=sc.next().charAt(0);
+			switch (m) {
+			case 'b': states();
+			 break;
+			case 'B': states();
+			break;
+			 default : System.out.println(" invalid Character");
+			}
+		}
+		public void chandigarh() {
+			System.out.println("===============================================================");
+			System.out.println("------Choose your favourite place to visit in Chandigarh:------");
+			System.out.println("===============================================================");
+			System.out.println(" ");
+			System.out.println("1. Rock Garden \n2. Rose Garden\n3. Sukhna Lake \n4. Japanese Garden\n5. International Dolls Museum "
+					+ "\n6. Chattbir Zoo \n7. Garden Of Silence\n8. Capitol Complex \n9. Open Hand Monument  \n10. Pinjore Garden "
+					+ "\n11. Tank Monument \n12. Sector 17\n13. Fateh Burj\n14. Mohali Cricket Stadium \n15. Kalagram");
+			System.out.println(" ");
+			States s=new Destination();// Up casting
+			Scanner sc = new Scanner(System.in);
+			System.out.println("Enter 'B' to return back");
+			char m=sc.next().charAt(0);
+			switch (m) {
+			case 'b': states();
+			 break;
+			case 'B': states();
+			break;
+			 default : System.out.println(" invalid Character");
+			}
+		}
+		public void delhi() {
+			System.out.println("==========================================================");
+			System.out.println("------Choose your favourite place to visit in Delhi:------");
+			System.out.println("==========================================================");
+			System.out.println(" ");
+			System.out.println("1. India Gate \n2. Red Fort\n3. Chandni Chowk \n4. Humayun’s Tomb \n5. Connaught Place "
+					+ "\n6. Qutub Minar \n7. Lajpat Nagar Market\n8. Lotus Temple \n9. Purana Quila  \n10. Akshardham Temple "
+					+ "\n11. Gurudwara Bangla Sahib \n12.  Lakshmi Narayan Temple 17\n13. Hauz Khas Complex\n14. Dilli Haat \n15. Raj Ghat");
+			System.out.println(" ");
+			States s=new Destination();// Up casting
+			Scanner sc = new Scanner(System.in);
+			System.out.println("Enter 'B' to return back");
+			char m=sc.next().charAt(0);
+			switch (m) {
+			case 'b': states();
+			 break;
+			case 'B': states();
+			break;
+			 default : System.out.println(" invalid Character");
+			}
+		}
+		public void j$k() {
+			System.out.println("==========================================================");
+			System.out.println("------Choose your favourite place to visit in Delhi:------");
+			System.out.println("==========================================================");
+			System.out.println(" ");
+			System.out.println("1. Yusmarg \n2. Gulmarg\n3. Sonmarg \n4. Pahalgam \n5. Gurez Valley "
+					+ "\n6. Srinagar \n7. Vaishno Devi\n8. Patnitop \n9. Doda  \n10. Kishtwar "
+					+ "\n11. Sanasar \n12.  Srinagar 17\n13. Hemis\n14. Pulwama \n15. Baltal");
+			System.out.println(" ");
+			States s=new Destination();// Up casting
+			Scanner sc = new Scanner(System.in);
+			System.out.println("Enter 'B' to return back");
+			char m=sc.next().charAt(0);
+			switch (m) {
+			case 'b': states();
+			 break;
+			case 'B': states();
+			break;
+			 default : System.out.println(" invalid Character");
+			}
+		}
+		public void ladhak() {
+			System.out.println("===========================================================");
+			System.out.println("------Choose your favourite place to visit in Ladhak:------");
+			System.out.println("===========================================================");
+			System.out.println(" ");
+			System.out.println("1. Thiksey Monastery \n2. Khardung-la Pass\n3. Markha Valley \n4. Nubra Valley \n5. Tso Moriri lake "
+					+ "\n6. Hemis National Park \n7. Diskit Monastery\n8. Shanti Stupa \n9. Royal Leh Palace  \n10. Namgyal Tsemo Gompa "
+					+ "\n11. Magnetic Hill \n12. Alchi \n13. Zanskar Valley\n14. Chadar Trek \n15. Pangong Tso");
+			System.out.println(" ");
+			States s=new Destination();// Up casting
+			Scanner sc = new Scanner(System.in);
+			System.out.println("Enter 'B' to return back");
+			char m=sc.next().charAt(0);
+			switch (m) {
+			case 'b': states();
+			 break;
+			case 'B': states();
+			break;
+			 default : System.out.println(" invalid Character");
+			}
+		}
+
+		
+	}//end block
+
+	
