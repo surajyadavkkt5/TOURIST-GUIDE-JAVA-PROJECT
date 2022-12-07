@@ -51,7 +51,8 @@ public class Myguide {
 		      System.out.println("Mobile Number: "+number);
 		      System.out.println("Email-id: "+email);
 		      System.out.println("========================= ");
-		      login();
+		      
+		      login(); // calling login method
 		      	break;
 		
 		case 2 : System.out.println("Login yourself[]");
@@ -2219,12 +2220,17 @@ class States extends Favourite {
 			System.out.println(" ");
 			States s=new Destination();// Up casting
 			Scanner sc = new Scanner(System.in);
-			System.out.println("Enter 'B' to return back");
+			System.out.println("1> Enter 'B' to return back");
+			System.out.println("2> Enter 'H' to return Home Page");
 			char m=sc.next().charAt(0);
 			switch (m) {
 			case 'b': states();
 			 break;
 			case 'B': states();
+			break;
+			case 'h': fav();
+			break;
+			case 'H': fav();
 			break;
 			 default : System.out.println(" invalid Character");
 			 andraPradesh();
@@ -2241,12 +2247,17 @@ class States extends Favourite {
 			System.out.println(" ");
 			States s=new Destination();// Up casting
 			Scanner sc = new Scanner(System.in);
-			System.out.println("Enter 'B' to return back");
+			System.out.println("1> Enter 'B' to return back");
+			System.out.println("2> Enter 'H' to return Home Page");
 			char m=sc.next().charAt(0);
 			switch (m) {
 			case 'b': states();
 			 break;
 			case 'B': states();
+			break;
+			case 'h': fav();
+			break;
+			case 'H': fav();
 			break;
 			 default : System.out.println(" invalid Character");
 			 arunachalPradesh();
@@ -2263,12 +2274,17 @@ class States extends Favourite {
 			System.out.println(" ");
 			States s=new Destination();// Up casting
 			Scanner sc = new Scanner(System.in);
-			System.out.println("Enter 'B' to return back");
+			System.out.println("1> Enter 'B' to return back");
+			System.out.println("2> Enter 'H' to return Home Page");
 			char m=sc.next().charAt(0);
 			switch (m) {
 			case 'b': states();
 			 break;
 			case 'B': states();
+			break;
+			case 'h': fav();
+			break;
+			case 'H': fav();
 			break;
 			 default : System.out.println(" invalid Character");
 			 assam();
@@ -2285,12 +2301,17 @@ class States extends Favourite {
 			System.out.println(" ");
 			States s=new Destination();// Up casting
 			Scanner sc = new Scanner(System.in);
-			System.out.println("Enter 'B' to return back");
+			System.out.println("1> Enter 'B' to return back");
+			System.out.println("2> Enter 'H' to return Home Page");
 			char m=sc.next().charAt(0);
 			switch (m) {
 			case 'b': states();
 			 break;
 			case 'B': states();
+			break;
+			case 'h': fav();
+			break;
+			case 'H': fav();
 			break;
 			 default : System.out.println(" invalid Character");
 			 bihar();
@@ -2307,12 +2328,17 @@ class States extends Favourite {
 			System.out.println(" ");
 			States s=new Destination();// Up casting
 			Scanner sc = new Scanner(System.in);
-			System.out.println("Enter 'B' to return back");
+			System.out.println("1> Enter 'B' to return back");
+			System.out.println("2> Enter 'H' to return Home Page");
 			char m=sc.next().charAt(0);
 			switch (m) {
 			case 'b': states();
 			 break;
 			case 'B': states();
+			break;
+			case 'h': fav();
+			break;
+			case 'H': fav();
 			break;
 			 default : System.out.println(" invalid Character");
 			 chhattisgarh();
@@ -2329,12 +2355,17 @@ class States extends Favourite {
 			System.out.println(" ");
 			States s=new Destination();// Up casting
 			Scanner sc = new Scanner(System.in);
-			System.out.println("Enter 'B' to return back");
+			System.out.println("1> Enter 'B' to return back");
+			System.out.println("2> Enter 'H' to return Home Page");
 			char m=sc.next().charAt(0);
 			switch (m) {
 			case 'b': states();
 			 break;
 			case 'B': states();
+			break;
+			case 'h': fav();
+			break;
+			case 'H': fav();
 			break;
 			 default : System.out.println(" invalid Character");
 			 goa();
@@ -2351,12 +2382,17 @@ class States extends Favourite {
 			System.out.println(" ");
 			States s=new Destination();// Up casting
 			Scanner sc = new Scanner(System.in);
-			System.out.println("Enter 'B' to return back");
+			System.out.println("1> Enter 'B' to return back");
+			System.out.println("2> Enter 'H' to return Home Page");
 			char m=sc.next().charAt(0);
 			switch (m) {
 			case 'b': states();
 			 break;
 			case 'B': states();
+			break;
+			case 'h': fav();
+			break;
+			case 'H': fav();
 			break;
 			 default : System.out.println(" invalid Character");
 			 gujrat();
@@ -2373,12 +2409,17 @@ class States extends Favourite {
 			System.out.println(" ");
 			States s=new Destination();// Up casting
 			Scanner sc = new Scanner(System.in);
-			System.out.println("Enter 'B' to return back");
+			System.out.println("1> Enter 'B' to return back");
+			System.out.println("2> Enter 'H' to return Home Page");
 			char m=sc.next().charAt(0);
 			switch (m) {
 			case 'b': states();
 			 break;
 			case 'B': states();
+			break;
+			case 'h': fav();
+			break;
+			case 'H': fav();
 			break;
 			 default : System.out.println(" invalid Character");
 			 haryana();
@@ -2395,12 +2436,17 @@ class States extends Favourite {
 			System.out.println(" ");
 			States s=new Destination();// Up casting
 			Scanner sc = new Scanner(System.in);
-			System.out.println("Enter 'B' to return back");
+			System.out.println("1> Enter 'B' to return back");
+			System.out.println("2> Enter 'H' to return Home Page");
 			char m=sc.next().charAt(0);
 			switch (m) {
 			case 'b': states();
 			 break;
 			case 'B': states();
+			break;
+			case 'h': fav();
+			break;
+			case 'H': fav();
 			break;
 			 default : System.out.println(" invalid Character");
 			 himachalpradesh();
@@ -2417,12 +2463,17 @@ class States extends Favourite {
 			System.out.println(" ");
 			States s=new Destination();// Up casting
 			Scanner sc = new Scanner(System.in);
-			System.out.println("Enter 'B' to return back");
+			System.out.println("1> Enter 'B' to return back");
+			System.out.println("2> Enter 'H' to return Home Page");
 			char m=sc.next().charAt(0);
 			switch (m) {
 			case 'b': states();
 			 break;
 			case 'B': states();
+			break;
+			case 'h': fav();
+			break;
+			case 'H': fav();
 			break;
 			 default : System.out.println(" invalid Character");
 			 jharkhand();
@@ -2439,12 +2490,17 @@ class States extends Favourite {
 			System.out.println(" ");
 			States s=new Destination();// Up casting
 			Scanner sc = new Scanner(System.in);
-			System.out.println("Enter 'B' to return back");
+			System.out.println("1> Enter 'B' to return back");
+			System.out.println("2> Enter 'H' to return Home Page");
 			char m=sc.next().charAt(0);
 			switch (m) {
 			case 'b': states();
 			 break;
 			case 'B': states();
+			break;
+			case 'h': fav();
+			break;
+			case 'H': fav();
 			break;
 			 default : System.out.println(" invalid Character");
 			 karnatka();
@@ -2461,12 +2517,17 @@ class States extends Favourite {
 			System.out.println(" ");
 			States s=new Destination();// Up casting
 			Scanner sc = new Scanner(System.in);
-			System.out.println("Enter 'B' to return back");
+			System.out.println("1> Enter 'B' to return back");
+			System.out.println("2> Enter 'H' to return Home Page");
 			char m=sc.next().charAt(0);
 			switch (m) {
 			case 'b': states();
 			 break;
 			case 'B': states();
+			break;
+			case 'h': fav();
+			break;
+			case 'H': fav();
 			break;
 			 default : System.out.println(" invalid Character");
 			 kerla();
@@ -2483,12 +2544,17 @@ class States extends Favourite {
 			System.out.println(" ");
 			States s=new Destination();// Up casting
 			Scanner sc = new Scanner(System.in);
-			System.out.println("Enter 'B' to return back");
+			System.out.println("1> Enter 'B' to return back");
+			System.out.println("2> Enter 'H' to return Home Page");
 			char m=sc.next().charAt(0);
 			switch (m) {
 			case 'b': states();
 			 break;
 			case 'B': states();
+			break;
+			case 'h': fav();
+			break;
+			case 'H': fav();
 			break;
 			 default : System.out.println(" invalid Character");
 			 madhyaPradesh();
@@ -2505,12 +2571,17 @@ class States extends Favourite {
 			System.out.println(" ");
 			States s=new Destination();// Up casting
 			Scanner sc = new Scanner(System.in);
-			System.out.println("Enter 'B' to return back");
+			System.out.println("1> Enter 'B' to return back");
+			System.out.println("2> Enter 'H' to return Home Page");
 			char m=sc.next().charAt(0);
 			switch (m) {
 			case 'b': states();
 			 break;
 			case 'B': states();
+			break;
+			case 'h': fav();
+			break;
+			case 'H': fav();
 			break;
 			 default : System.out.println(" invalid Character");
 			  maharashtra();
@@ -2527,12 +2598,17 @@ class States extends Favourite {
 			System.out.println(" ");
 			States s=new Destination();// Up casting
 			Scanner sc = new Scanner(System.in);
-			System.out.println("Enter 'B' to return back");
+			System.out.println("1> Enter 'B' to return back");
+			System.out.println("2> Enter 'H' to return Home Page");
 			char m=sc.next().charAt(0);
 			switch (m) {
 			case 'b': states();
 			 break;
 			case 'B': states();
+			break;
+			case 'h': fav();
+			break;
+			case 'H': fav();
 			break;
 			 default : System.out.println(" invalid Character");
 			manipur();
@@ -2549,12 +2625,17 @@ class States extends Favourite {
 			System.out.println(" ");
 			States s=new Destination();// Up casting
 			Scanner sc = new Scanner(System.in);
-			System.out.println("Enter 'B' to return back");
+			System.out.println("1> Enter 'B' to return back");
+			System.out.println("2> Enter 'H' to return Home Page");
 			char m=sc.next().charAt(0);
 			switch (m) {
 			case 'b': states();
 			 break;
 			case 'B': states();
+			break;
+			case 'h': fav();
+			break;
+			case 'H': fav();
 			break;
 			 default : System.out.println(" invalid Character");
 			 mizoram();
@@ -2571,12 +2652,17 @@ class States extends Favourite {
 			System.out.println(" ");
 			States s=new Destination();// Up casting
 			Scanner sc = new Scanner(System.in);
-			System.out.println("Enter 'B' to return back");
+			System.out.println("1> Enter 'B' to return back");
+			System.out.println("2> Enter 'H' to return Home Page");
 			char m=sc.next().charAt(0);
 			switch (m) {
 			case 'b': states();
 			 break;
 			case 'B': states();
+			break;
+			case 'h': fav();
+			break;
+			case 'H': fav();
 			break;
 			 default : System.out.println(" invalid Character");
 			 odisha();
@@ -2593,12 +2679,17 @@ class States extends Favourite {
 			System.out.println(" ");
 			States s=new Destination();// Up casting
 			Scanner sc = new Scanner(System.in);
-			System.out.println("Enter 'B' to return back");
+			System.out.println("1> Enter 'B' to return back");
+			System.out.println("2> Enter 'H' to return Home Page");
 			char m=sc.next().charAt(0);
 			switch (m) {
 			case 'b': states();
 			 break;
 			case 'B': states();
+			break;
+			case 'h': fav();
+			break;
+			case 'H': fav();
 			break;
 			 default : System.out.println(" invalid Character");
 			 punjab();
@@ -2615,12 +2706,17 @@ class States extends Favourite {
 			System.out.println(" ");
 			States s=new Destination();// Up casting
 			Scanner sc = new Scanner(System.in);
-			System.out.println("Enter 'B' to return back");
+			System.out.println("1> Enter 'B' to return back");
+			System.out.println("2> Enter 'H' to return Home Page");
 			char m=sc.next().charAt(0);
 			switch (m) {
 			case 'b': states();
 			 break;
 			case 'B': states();
+			break;
+			case 'h': fav();
+			break;
+			case 'H': fav();
 			break;
 			 default : System.out.println(" invalid Character");
 			 rajashthan();
@@ -2637,12 +2733,17 @@ class States extends Favourite {
 			System.out.println(" ");
 			States s=new Destination();// Up casting
 			Scanner sc = new Scanner(System.in);
-			System.out.println("Enter 'B' to return back");
+			System.out.println("1> Enter 'B' to return back");
+			System.out.println("2> Enter 'H' to return Home Page");
 			char m=sc.next().charAt(0);
 			switch (m) {
 			case 'b': states();
 			 break;
 			case 'B': states();
+			break;
+			case 'h': fav();
+			break;
+			case 'H': fav();
 			break;
 			 default : System.out.println(" invalid Character");
 			 sikkim();
@@ -2659,12 +2760,17 @@ class States extends Favourite {
 			System.out.println(" ");
 			States s=new Destination();// Up casting
 			Scanner sc = new Scanner(System.in);
-			System.out.println("Enter 'B' to return back");
+			System.out.println("1> Enter 'B' to return back");
+			System.out.println("2> Enter 'H' to return Home Page");
 			char m=sc.next().charAt(0);
 			switch (m) {
 			case 'b': states();
 			 break;
 			case 'B': states();
+			break;
+			case 'h': fav();
+			break;
+			case 'H': fav();
 			break;
 			 default : System.out.println(" invalid Character");
 			 tamilnadu();
@@ -2681,12 +2787,17 @@ class States extends Favourite {
 			System.out.println(" ");
 			States s=new Destination();// Up casting
 			Scanner sc = new Scanner(System.in);
-			System.out.println("Enter 'B' to return back");
+			System.out.println("1> Enter 'B' to return back");
+			System.out.println("2> Enter 'H' to return Home Page");
 			char m=sc.next().charAt(0);
 			switch (m) {
 			case 'b': states();
 			 break;
 			case 'B': states();
+			break;
+			case 'h': fav();
+			break;
+			case 'H': fav();
 			break;
 			 default : System.out.println(" invalid Character");
 			 telangana();
@@ -2703,12 +2814,17 @@ class States extends Favourite {
 			System.out.println(" ");
 			States s=new Destination();// Up casting
 			Scanner sc = new Scanner(System.in);
-			System.out.println("Enter 'B' to return back");
+			System.out.println("1> Enter 'B' to return back");
+			System.out.println("2> Enter 'H' to return Home Page");
 			char m=sc.next().charAt(0);
 			switch (m) {
 			case 'b': states();
 			 break;
 			case 'B': states();
+			break;
+			case 'h': fav();
+			break;
+			case 'H': fav();
 			break;
 			 default : System.out.println(" invalid Character");
 			 tripur();
@@ -2725,12 +2841,17 @@ class States extends Favourite {
 			System.out.println(" ");
 			States s=new Destination();// Up casting
 			Scanner sc = new Scanner(System.in);
-			System.out.println("Enter 'B' to return back");
+			System.out.println("1> Enter 'B' to return back");
+			System.out.println("2> Enter 'H' to return Home Page");
 			char m=sc.next().charAt(0);
 			switch (m) {
 			case 'b': states();
 			 break;
 			case 'B': states();
+			break;
+			case 'h': fav();
+			break;
+			case 'H': fav();
 			break;
 			 default : System.out.println(" invalid Character");
 			 uttrakhand();
@@ -2747,12 +2868,17 @@ class States extends Favourite {
 			System.out.println(" ");
 			States s=new Destination();// Up casting
 			Scanner sc = new Scanner(System.in);
-			System.out.println("Enter 'B' to return back");
+			System.out.println("1> Enter 'B' to return back");
+			System.out.println("2> Enter 'H' to return Home Page");
 			char m=sc.next().charAt(0);
 			switch (m) {
 			case 'b': states();
 			 break;
 			case 'B': states();
+			break;
+			case 'h': fav();
+			break;
+			case 'H': fav();
 			break;
 			 default : System.out.println(" invalid Character");
 			 uttarPradesh();
@@ -2769,12 +2895,17 @@ class States extends Favourite {
 			System.out.println(" ");
 			States s=new Destination();// Up casting
 			Scanner sc = new Scanner(System.in);
-			System.out.println("Enter 'B' to return back");
+			System.out.println("1> Enter 'B' to return back");
+			System.out.println("2> Enter 'H' to return Home Page");
 			char m=sc.next().charAt(0);
 			switch (m) {
 			case 'b': states();
 			 break;
 			case 'B': states();
+			break;
+			case 'h': fav();
+			break;
+			case 'H': fav();
 			break;
 			 default : System.out.println(" invalid Character");
 			 westBengal();
@@ -2790,12 +2921,17 @@ class States extends Favourite {
 			System.out.println(" ");
 			States s=new Destination();// Up casting
 			Scanner sc = new Scanner(System.in);
-			System.out.println("Enter 'B' to return back");
+			System.out.println("1> Enter 'B' to return back");
+			System.out.println("2> Enter 'H' to return Home Page");
 			char m=sc.next().charAt(0);
 			switch (m) {
 			case 'b': states();
 			 break;
 			case 'B': states();
+			break;
+			case 'h': fav();
+			break;
+			case 'H': fav();
 			break;
 			 default : System.out.println(" invalid Character");
 			 aani();
@@ -2812,12 +2948,17 @@ class States extends Favourite {
 			System.out.println(" ");
 			States s=new Destination();// Up casting
 			Scanner sc = new Scanner(System.in);
-			System.out.println("Enter 'B' to return back");
+			System.out.println("1> Enter 'B' to return back");
+			System.out.println("2> Enter 'H' to return Home Page");
 			char m=sc.next().charAt(0);
 			switch (m) {
 			case 'b': states();
 			 break;
 			case 'B': states();
+			break;
+			case 'h': fav();
+			break;
+			case 'H': fav();
 			break;
 			 default : System.out.println(" invalid Character");
 			 chandigarh();
@@ -2834,12 +2975,17 @@ class States extends Favourite {
 			System.out.println(" ");
 			States s=new Destination();// Up casting
 			Scanner sc = new Scanner(System.in);
-			System.out.println("Enter 'B' to return back");
+			System.out.println("1> Enter 'B' to return back");
+			System.out.println("2> Enter 'H' to return Home Page");
 			char m=sc.next().charAt(0);
 			switch (m) {
 			case 'b': states();
 			 break;
 			case 'B': states();
+			break;
+			case 'h': fav();
+			break;
+			case 'H': fav();
 			break;
 			 default : System.out.println(" invalid Character");
 			 delhi();
@@ -2856,12 +3002,17 @@ class States extends Favourite {
 			System.out.println(" ");
 			States s=new Destination();// Up casting
 			Scanner sc = new Scanner(System.in);
-			System.out.println("Enter 'B' to return back");
+			System.out.println("1> Enter 'B' to return back");
+			System.out.println("2> Enter 'H' to return Home Page");
 			char m=sc.next().charAt(0);
 			switch (m) {
 			case 'b': states();
 			 break;
 			case 'B': states();
+			break;
+			case 'h': fav();
+			break;
+			case 'H': fav();
 			break;
 			 default : System.out.println(" invalid Character");
 			 j$k();
@@ -2878,12 +3029,17 @@ class States extends Favourite {
 			System.out.println(" ");
 			States s=new Destination();// Up casting
 			Scanner sc = new Scanner(System.in);
-			System.out.println("Enter 'B' to return back");
+			System.out.println("1> Enter 'B' to return back");
+			System.out.println("2> Enter 'H' to return Home Page");
 			char m=sc.next().charAt(0);
 			switch (m) {
 			case 'b': states();
 			 break;
 			case 'B': states();
+			break;
+			case 'h': fav();
+			break;
+			case 'H': fav();
 			break;
 			 default : System.out.println(" invalid Character");
 			 ladhak();
