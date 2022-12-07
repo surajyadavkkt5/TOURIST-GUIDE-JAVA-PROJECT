@@ -171,12 +171,18 @@ class Temples extends Favourite{
 System.out.println("-------City Map-------");
 System.out.println(" ");
 Scanner sc1 = new Scanner(System.in);
-System.out.println("Enter 'B' to return back");
+System.out.println("1> Enter 'B' to return back");
+System.out.println("2> Enter 'H' to return Home Page");
+
 char m=sc1.next().charAt(0);
 switch (m) {
 case 'b': temple();
  break;
 case 'B': temple();
+break;
+case 'h': fav();
+break;
+case 'H': fav();
 break;
  default : System.out.println(" invalid Character");
 }
@@ -205,12 +211,17 @@ break;
 System.out.println("-------City Map-------");
 System.out.println(" ");
 Scanner sc2 = new Scanner(System.in);
-System.out.println("Enter 'B' to return back");
+System.out.println("1> Enter 'B' to return back");
+System.out.println("2> Enter 'H' to return Home Page");
 char m2=sc2.next().charAt(0);
 switch (m2) {
 case 'b': temple();
  break;
 case 'B': temple();
+break;
+case 'h': fav();
+break;
+case 'H': fav();
 break;
  default : System.out.println(" invalid Character");
 }
@@ -239,12 +250,17 @@ break;
 System.out.println("-------City Map-------");
 System.out.println(" ");
 Scanner sc3 = new Scanner(System.in);
-System.out.println("Enter 'B' to return back");
+System.out.println("1> Enter 'B' to return back");
+System.out.println("2> Enter 'H' to return Home Page");
 char m3=sc3.next().charAt(0);
 switch (m3) {
 case 'b': temple();
  break;
 case 'B': temple();
+break;
+case 'h': fav();
+break;
+case 'H': fav();
 break;
  default : System.out.println(" invalid Character");
 }
@@ -273,12 +289,17 @@ break;
 System.out.println("-------City Map-------");
 System.out.println(" ");
 Scanner sc4 = new Scanner(System.in);
-System.out.println("Enter 'B' to return back");
+System.out.println("1> Enter 'B' to return back");
+System.out.println("2> Enter 'H' to return Home Page");
 char m4=sc4.next().charAt(0);
 switch (m4) {
 case 'b': temple();
  break;
 case 'B': temple();
+break;
+case 'h': fav();
+break;
+case 'H': fav();
 break;
  default : System.out.println(" invalid Character");
 }
@@ -307,12 +328,17 @@ break;
 System.out.println("-------City Map-------");
 System.out.println(" ");
 Scanner sc5 = new Scanner(System.in);
-System.out.println("Enter 'B' to return back");
+System.out.println("1> Enter 'B' to return back");
+System.out.println("2> Enter 'H' to return Home Page");
 char m5=sc5.next().charAt(0);
 switch (m5) {
 case 'b': temple();
  break;
 case 'B': temple();
+break;
+case 'h': fav();
+break;
+case 'H': fav();
 break;
  default : System.out.println(" invalid Character");
 }
@@ -340,12 +366,17 @@ break;
 System.out.println("-------City Map-------");
 System.out.println(" ");
 Scanner sc6 = new Scanner(System.in);
-System.out.println("Enter 'B' to return back");
+System.out.println("1> Enter 'B' to return back");
+System.out.println("2> Enter 'H' to return Home Page");
 char m6=sc6.next().charAt(0);
 switch (m6) {
 case 'b': temple();
  break;
 case 'B': temple();
+break;
+case 'h': fav();
+break;
+case 'H': fav();
 break;
  default : System.out.println(" invalid Character");
 }
@@ -373,12 +404,17 @@ break;
 System.out.println("-------City Map-------");
 System.out.println(" ");
 Scanner sc7 = new Scanner(System.in);
-System.out.println("Enter 'B' to return back");
+System.out.println("1> Enter 'B' to return back");
+System.out.println("2> Enter 'H' to return Home Page");
 char m7=sc7.next().charAt(0);
 switch (m7) {
 case 'b': temple();
  break;
 case 'B': temple();
+break;
+case 'h': fav();
+break;
+case 'H': fav();
 break;
  default : System.out.println(" invalid Character");
 }
@@ -406,12 +442,17 @@ break;
 System.out.println("-------City Map-------");
 System.out.println(" ");
 Scanner sc8 = new Scanner(System.in);
-System.out.println("Enter 'B' to return back");
+System.out.println("1> Enter 'B' to return back");
+System.out.println("2> Enter 'H' to return Home Page");
 char m8=sc8.next().charAt(0);
 switch (m8) {
 case 'b': temple();
  break;
 case 'B': temple();
+break;
+case 'h': fav();
+break;
+case 'H': fav();
 break;
  default : System.out.println(" invalid Character");
 }
@@ -439,12 +480,17 @@ break;
 System.out.println("-------City Map-------");
 System.out.println(" ");
 Scanner sc9 = new Scanner(System.in);
-System.out.println("Enter 'B' to return back");
+System.out.println("1> Enter 'B' to return back");
+System.out.println("2> Enter 'H' to return Home Page");
 char m9=sc9.next().charAt(0);
 switch (m9) {
 case 'b': temple();
  break;
 case 'B': temple();
+break;
+case 'h': fav();
+break;
+case 'H': fav();
 break;
  default : System.out.println(" invalid Character");
 }
@@ -473,12 +519,17 @@ break;
 System.out.println("-------City Map-------");
 System.out.println(" ");
 Scanner sc10 = new Scanner(System.in);
-System.out.println("Enter 'B' to return back");
+System.out.println("1> Enter 'B' to return back");
+System.out.println("2> Enter 'H' to return Home Page");
 char m10=sc10.next().charAt(0);
 switch (m10) {
 case 'b': temple();
  break;
 case 'B': temple();
+break;
+case 'h': fav();
+break;
+case 'H': fav();
 break;
  default : System.out.println(" invalid Character");
 }
@@ -506,12 +557,17 @@ break;
 System.out.println("-------City Map-------");
 System.out.println(" ");
 Scanner sc11 = new Scanner(System.in);
-System.out.println("Enter 'B' to return back");
+System.out.println("1> Enter 'B' to return back");
+System.out.println("2> Enter 'H' to return Home Page");
 char m11=sc11.next().charAt(0);
 switch (m11) {
 case 'b': temple();
  break;
 case 'B': temple();
+break;
+case 'h': fav();
+break;
+case 'H': fav();
 break;
  default : System.out.println(" invalid Character");
 }
@@ -539,12 +595,17 @@ break;
 System.out.println("-------City Map-------");
 System.out.println(" ");
 Scanner sc12 = new Scanner(System.in);
-System.out.println("Enter 'B' to return back");
+System.out.println("1> Enter 'B' to return back");
+System.out.println("2> Enter 'H' to return Home Page");
 char m12=sc12.next().charAt(0);
 switch (m12) {
 case 'b': temple();
  break;
 case 'B': temple();
+break;
+case 'h': fav();
+break;
+case 'H': fav();
 break;
  default : System.out.println(" invalid Character");
 }
@@ -572,12 +633,17 @@ break;
 System.out.println("-------City Map-------");
 System.out.println(" ");
 Scanner sc13 = new Scanner(System.in);
-System.out.println("Enter 'B' to return back");
+System.out.println("1> Enter 'B' to return back");
+System.out.println("2> Enter 'H' to return Home Page");
 char m13=sc13.next().charAt(0);
 switch (m13) {
 case 'b': temple();
  break;
 case 'B': temple();
+break;
+case 'h': fav();
+break;
+case 'H': fav();
 break;
  default : System.out.println(" invalid Character");
 }
@@ -605,12 +671,17 @@ break;
 System.out.println("-------City Map-------");
 System.out.println(" ");
 Scanner sc14 = new Scanner(System.in);
-System.out.println("Enter 'B' to return back");
+System.out.println("1> Enter 'B' to return back");
+System.out.println("2> Enter 'H' to return Home Page");
 char m14=sc14.next().charAt(0);
 switch (m14) {
 case 'b': temple();
  break;
 case 'B': temple();
+break;
+case 'h': fav();
+break;
+case 'H': fav();
 break;
  default : System.out.println(" invalid Character");
 }
@@ -638,12 +709,17 @@ break;
 System.out.println("-------City Map-------");
 System.out.println(" ");
 Scanner sc15 = new Scanner(System.in);
-System.out.println("Enter 'B' to return back");
+System.out.println("1> Enter 'B' to return back");
+System.out.println("2> Enter 'H' to return Home Page");
 char m15=sc15.next().charAt(0);
 switch (m15) {
 case 'b': temple();
  break;
 case 'B': temple();
+break;
+case 'h': fav();
+break;
+case 'H': fav();
 break;
  default : System.out.println(" invalid Character");
 }
@@ -671,12 +747,17 @@ break;
 System.out.println("-------City Map-------");
 System.out.println(" ");
 Scanner sc16 = new Scanner(System.in);
-System.out.println("Enter 'B' to return back");
+System.out.println("1> Enter 'B' to return back");
+System.out.println("2> Enter 'H' to return Home Page");
 char m16=sc16.next().charAt(0);
 switch (m16) {
 case 'b': temple();
  break;
 case 'B': temple();
+break;
+case 'h': fav();
+break;
+case 'H': fav();
 break;
  default : System.out.println(" invalid Character");
 }
@@ -704,12 +785,17 @@ break;
 System.out.println("-------City Map-------");
 System.out.println(" ");
 Scanner sc17 = new Scanner(System.in);
-System.out.println("Enter 'B' to return back");
+System.out.println("1> Enter 'B' to return back");
+System.out.println("2> Enter 'H' to return Home Page");
 char m17=sc17.next().charAt(0);
 switch (m17) {
 case 'b': temple();
  break;
 case 'B': temple();
+break;
+case 'h': fav();
+break;
+case 'H': fav();
 break;
  default : System.out.println(" invalid Character");
 }
@@ -738,12 +824,17 @@ break;
 System.out.println("-------City Map-------");
 System.out.println(" ");
 Scanner sc18 = new Scanner(System.in);
-System.out.println("Enter 'B' to return back");
+System.out.println("1> Enter 'B' to return back");
+System.out.println("2> Enter 'H' to return Home Page");
 char m18=sc18.next().charAt(0);
 switch (m18) {
 case 'b': temple();
  break;
 case 'B': temple();
+break;
+case 'h': fav();
+break;
+case 'H': fav();
 break;
  default : System.out.println(" invalid Character");
 }
@@ -772,12 +863,17 @@ break;
 System.out.println("-------City Map-------");
 System.out.println(" ");
 Scanner sc19 = new Scanner(System.in);
-System.out.println("Enter 'B' to return back");
+System.out.println("1> Enter 'B' to return back");
+System.out.println("2> Enter 'H' to return Home Page");
 char m19=sc19.next().charAt(0);
 switch (m19) {
 case 'b': temple();
  break;
 case 'B': temple();
+break;
+case 'h': fav();
+break;
+case 'H': fav();
 break;
  default : System.out.println(" invalid Character");
 }
@@ -806,17 +902,24 @@ break;
 System.out.println("-------City Map-------");
 System.out.println(" ");
 Scanner sc20 = new Scanner(System.in);
-System.out.println("Enter 'B' to return back");
+System.out.println("1> Enter 'B' to return back");
+System.out.println("2> Enter 'H' to return Home Page");
 char m20=sc20.next().charAt(0);
 switch (m20) {
 case 'b': temple();
  break;
 case 'B': temple();
 break;
+case 'h': fav();
+break;
+case 'H': fav();
+break;
  default : System.out.println(" invalid Character");
+            
 } 
 		break;
-		default: System.out.println("Invalid number, please enter valid number(:");
+		default: System.out.println("Invalid number, please enter valid number\nxxxxxxxxxxxxxxxx\n #.Re-Eneter Number");
+		 temple();
 		}
 	}
 	public void beaches() {
@@ -855,12 +958,17 @@ break;
 System.out.println("-------City Map-------");
 System.out.println(" ");
 Scanner sc1 = new Scanner(System.in);
-System.out.println("Enter 'B' to return back");
+System.out.println("1> Enter 'B' to return back");
+System.out.println("2> Enter 'H' to return Home Page");
 char m=sc1.next().charAt(0);
 switch (m) {
 case 'b': beaches();
  break;
 case 'B': beaches();
+break;
+case 'h': fav();
+break;
+case 'H': fav();
 break;
  default : System.out.println(" invalid Character");
 }
@@ -883,12 +991,17 @@ break;
 System.out.println("-------City Map-------");
 System.out.println(" ");
 Scanner sc2 = new Scanner(System.in);
-System.out.println("Enter 'B' to return back");
+System.out.println("1> Enter 'B' to return back");
+System.out.println("2> Enter 'H' to return Home Page");
 char m2=sc2.next().charAt(0);
 switch (m2) {
 case 'b': beaches();
  break;
 case 'B': beaches();
+break;
+case 'h': fav();
+break;
+case 'H': fav();
 break;
  default : System.out.println(" invalid Character");
 }
@@ -911,12 +1024,17 @@ break;
 System.out.println("-------City Map-------");
 System.out.println(" ");
 Scanner sc3 = new Scanner(System.in);
-System.out.println("Enter 'B' to return back");
+System.out.println("1> Enter 'B' to return back");
+System.out.println("2> Enter 'H' to return Home Page");
 char m3=sc3.next().charAt(0);
 switch (m3) {
 case 'b': beaches();
  break;
 case 'B': beaches();
+break;
+case 'h': fav();
+break;
+case 'H': fav();
 break;
  default : System.out.println(" invalid Character");
 }
@@ -939,12 +1057,17 @@ break;
 System.out.println("-------City Map-------");
 System.out.println(" ");
 Scanner sc4 = new Scanner(System.in);
-System.out.println("Enter 'B' to return back");
+System.out.println("1> Enter 'B' to return back");
+System.out.println("2> Enter 'H' to return Home Page");
 char m4=sc4.next().charAt(0);
 switch (m4) {
 case 'b': beaches();
  break;
 case 'B': beaches();
+break;
+case 'h': fav();
+break;
+case 'H': fav();
 break;
  default : System.out.println(" invalid Character");
 }
@@ -967,12 +1090,17 @@ break;
 System.out.println("-------City Map-------");
 System.out.println(" ");
 Scanner sc5 = new Scanner(System.in);
-System.out.println("Enter 'B' to return back");
+System.out.println("1> Enter 'B' to return back");
+System.out.println("2> Enter 'H' to return Home Page");
 char m5=sc5.next().charAt(0);
 switch (m5) {
 case 'b': beaches();
  break;
 case 'B': beaches();
+break;
+case 'h': fav();
+break;
+case 'H': fav();
 break;
  default : System.out.println(" invalid Character");
 }
@@ -995,12 +1123,17 @@ break;
 System.out.println("-------City Map-------");
 System.out.println(" ");
 Scanner sc6 = new Scanner(System.in);
-System.out.println("Enter 'B' to return back");
+System.out.println("1> Enter 'B' to return back");
+System.out.println("2> Enter 'H' to return Home Page");
 char m6=sc6.next().charAt(0);
 switch (m6) {
 case 'b': beaches();
  break;
 case 'B': beaches();
+break;
+case 'h': fav();
+break;
+case 'H': fav();
 break;
  default : System.out.println(" invalid Character");
 }
@@ -1023,12 +1156,17 @@ break;
 System.out.println("-------City Map-------");
 System.out.println(" ");
 Scanner sc7 = new Scanner(System.in);
-System.out.println("Enter 'B' to return back");
+System.out.println("1> Enter 'B' to return back");
+System.out.println("2> Enter 'H' to return Home Page");
 char m7=sc7.next().charAt(0);
 switch (m7) {
 case 'b': beaches();
  break;
 case 'B': beaches();
+break;
+case 'h': fav();
+break;
+case 'H': fav();
 break;
  default : System.out.println(" invalid Character");
 }
@@ -1051,12 +1189,17 @@ break;
 System.out.println("-------City Map-------");
 System.out.println(" ");
 Scanner sc8 = new Scanner(System.in);
-System.out.println("Enter 'B' to return back");
+System.out.println("1> Enter 'B' to return back");
+System.out.println("2> Enter 'H' to return Home Page");
 char m8=sc8.next().charAt(0);
 switch (m8) {
 case 'b': beaches();
  break;
 case 'B': beaches();
+break;
+case 'h': fav();
+break;
+case 'H': fav();
 break;
  default : System.out.println(" invalid Character");
 }
@@ -1079,12 +1222,17 @@ break;
 System.out.println("-------City Map-------");
 System.out.println(" ");
 Scanner sc9 = new Scanner(System.in);
-System.out.println("Enter 'B' to return back");
+System.out.println("1> Enter 'B' to return back");
+System.out.println("2> Enter 'H' to return Home Page");
 char m9=sc9.next().charAt(0);
 switch (m9) {
 case 'b': beaches();
  break;
 case 'B': beaches();
+break;
+case 'h': fav();
+break;
+case 'H': fav();
 break;
  default : System.out.println(" invalid Character");
 }
@@ -1107,12 +1255,17 @@ break;
 System.out.println("-------City Map-------");
 System.out.println(" ");
 Scanner sc10 = new Scanner(System.in);
-System.out.println("Enter 'B' to return back");
+System.out.println("1> Enter 'B' to return back");
+System.out.println("2> Enter 'H' to return Home Page");
 char m10=sc10.next().charAt(0);
 switch (m10) {
 case 'b': beaches();
  break;
 case 'B': beaches();
+break;
+case 'h': fav();
+break;
+case 'H': fav();
 break;
  default : System.out.println(" invalid Character");
 }
@@ -1135,12 +1288,17 @@ break;
 System.out.println("-------City Map-------");
 System.out.println(" ");
 Scanner sc11 = new Scanner(System.in);
-System.out.println("Enter 'B' to return back");
+System.out.println("1> Enter 'B' to return back");
+System.out.println("2> Enter 'H' to return Home Page");
 char m11=sc11.next().charAt(0);
 switch (m11) {
 case 'b': beaches();
  break;
 case 'B': beaches();
+break;
+case 'h': fav();
+break;
+case 'H': fav();
 break;
  default : System.out.println(" invalid Character");
 }
@@ -1163,12 +1321,17 @@ break;
 System.out.println("-------City Map-------");
 System.out.println(" ");
 Scanner sc12 = new Scanner(System.in);
-System.out.println("Enter 'B' to return back");
+System.out.println("1> Enter 'B' to return back");
+System.out.println("2> Enter 'H' to return Home Page");
 char m12=sc12.next().charAt(0);
 switch (m12) {
 case 'b': beaches();
  break;
 case 'B': beaches();
+break;
+case 'h': fav();
+break;
+case 'H': fav();
 break;
  default : System.out.println(" invalid Character");
 }
@@ -1191,12 +1354,17 @@ break;
 System.out.println("-------City Map-------");
 System.out.println(" ");
 Scanner sc13 = new Scanner(System.in);
-System.out.println("Enter 'B' to return back");
+System.out.println("1> Enter 'B' to return back");
+System.out.println("2> Enter 'H' to return Home Page");
 char m13=sc13.next().charAt(0);
 switch (m13) {
 case 'b': beaches();
  break;
 case 'B': beaches();
+break;
+case 'h': fav();
+break;
+case 'H': fav();
 break;
  default : System.out.println(" invalid Character");
 }
@@ -1219,12 +1387,17 @@ break;
 System.out.println("-------City Map-------");
 System.out.println(" ");
 Scanner sc14 = new Scanner(System.in);
-System.out.println("Enter 'B' to return back");
+System.out.println("1> Enter 'B' to return back");
+System.out.println("2> Enter 'H' to return Home Page");
 char m14=sc14.next().charAt(0);
 switch (m14) {
 case 'b': beaches();
  break;
 case 'B': beaches();
+break;
+case 'h': fav();
+break;
+case 'H': fav();
 break;
  default : System.out.println(" invalid Character");
 }
@@ -1247,12 +1420,17 @@ break;
 System.out.println("-------City Map-------");
 System.out.println(" ");
 Scanner sc15 = new Scanner(System.in);
-System.out.println("Enter 'B' to return back");
+System.out.println("1> Enter 'B' to return back");
+System.out.println("2> Enter 'H' to return Home Page");
 char m15=sc15.next().charAt(0);
 switch (m15) {
 case 'b': beaches();
  break;
 case 'B': beaches();
+break;
+case 'h': fav();
+break;
+case 'H': fav();
 break;
  default : System.out.println(" invalid Character");
 }
@@ -1275,12 +1453,17 @@ break;
 System.out.println("-------City Map-------");
 System.out.println(" ");
 Scanner sc16 = new Scanner(System.in);
-System.out.println("Enter 'B' to return back");
+System.out.println("1> Enter 'B' to return back");
+System.out.println("2> Enter 'H' to return Home Page");
 char m16=sc16.next().charAt(0);
 switch (m16) {
 case 'b': beaches();
  break;
 case 'B': beaches();
+break;
+case 'h': fav();
+break;
+case 'H': fav();
 break;
  default : System.out.println(" invalid Character");
 }
@@ -1303,17 +1486,23 @@ break;
 System.out.println("-------City Map-------");
 System.out.println(" ");
 Scanner sc17 = new Scanner(System.in);
-System.out.println("Enter 'B' to return back");
+System.out.println("1> Enter 'B' to return back");
+System.out.println("2> Enter 'H' to return Home Page");
 char m17=sc17.next().charAt(0);
 switch (17) {
 case 'b': beaches();
  break;
 case 'B': beaches();
 break;
+case 'h': fav();
+break;
+case 'H': fav();
+break;
  default : System.out.println(" invalid Character");
 }
 		break;
-		default: System.out.println("Invalid number, please enter valid number(:");
+		default: System.out.println("Invalid number, please enter valid number\nxxxxxxxxxxxxxxxx\n #.Re-Eneter Number");
+		beaches() ;
 		}
 	}
 	public void honeymoon() {
@@ -1351,12 +1540,17 @@ break;
 System.out.println("-------City Map-------");
 System.out.println(" ");
 Scanner sc1 = new Scanner(System.in);
-System.out.println("Enter 'B' to return back");
+System.out.println("1> Enter 'B' to return back");
+System.out.println("2> Enter 'H' to return Home Page");
 char m=sc1.next().charAt(0);
 switch (m) {
 case 'b': honeymoon();
  break;
 case 'B': honeymoon();
+break;
+case 'h': fav();
+break;
+case 'H': fav();
 break;
  default : System.out.println(" invalid Character");
 }
@@ -1379,12 +1573,17 @@ break;
 System.out.println("-------City Map-------");
 System.out.println(" ");
 Scanner sc2 = new Scanner(System.in);
-System.out.println("Enter 'B' to return back");
+System.out.println("1> Enter 'B' to return back");
+System.out.println("2> Enter 'H' to return Home Page");
 char m2=sc2.next().charAt(0);
 switch (m2) {
 case 'b': honeymoon();
  break;
 case 'B': honeymoon();
+break;
+case 'h': fav();
+break;
+case 'H': fav();
 break;
  default : System.out.println(" invalid Character");
 }
@@ -1407,12 +1606,17 @@ break;
 System.out.println("-------City Map-------");
 System.out.println(" ");
 Scanner sc3 = new Scanner(System.in);
-System.out.println("Enter 'B' to return back");
+System.out.println("1> Enter 'B' to return back");
+System.out.println("2> Enter 'H' to return Home Page");
 char m3=sc3.next().charAt(0);
 switch (m3) {
 case 'b': honeymoon();
  break;
 case 'B': honeymoon();
+break;
+case 'h': fav();
+break;
+case 'H': fav();
 break;
  default : System.out.println(" invalid Character");
 }
@@ -1435,12 +1639,17 @@ break;
 System.out.println("-------City Map-------");
 System.out.println(" ");
 Scanner sc4 = new Scanner(System.in);
-System.out.println("Enter 'B' to return back");
+System.out.println("1> Enter 'B' to return back");
+System.out.println("2> Enter 'H' to return Home Page");
 char m4=sc4.next().charAt(0);
 switch (m4) {
 case 'b': honeymoon();
  break;
 case 'B': honeymoon();
+break;
+case 'h': fav();
+break;
+case 'H': fav();
 break;
  default : System.out.println(" invalid Character");
 }
@@ -1463,12 +1672,17 @@ break;
 System.out.println("-------City Map-------");
 System.out.println(" ");
 Scanner sc5 = new Scanner(System.in);
-System.out.println("Enter 'B' to return back");
+System.out.println("1> Enter 'B' to return back");
+System.out.println("2> Enter 'H' to return Home Page");
 char m5=sc5.next().charAt(0);
 switch (m5) {
 case 'b': honeymoon();
  break;
 case 'B': honeymoon();
+break;
+case 'h': fav();
+break;
+case 'H': fav();
 break;
  default : System.out.println(" invalid Character");
 }
@@ -1491,12 +1705,17 @@ break;
 System.out.println("-------City Map-------");
 System.out.println(" ");
 Scanner sc6 = new Scanner(System.in);
-System.out.println("Enter 'B' to return back");
+System.out.println("1> Enter 'B' to return back");
+System.out.println("2> Enter 'H' to return Home Page");
 char m6=sc6.next().charAt(0);
 switch (m6) {
 case 'b': honeymoon();
  break;
 case 'B': honeymoon();
+break;
+case 'h': fav();
+break;
+case 'H': fav();
 break;
  default : System.out.println(" invalid Character");
 }
@@ -1519,12 +1738,17 @@ break;
 System.out.println("-------City Map-------");
 System.out.println(" ");
 Scanner sc7 = new Scanner(System.in);
-System.out.println("Enter 'B' to return back");
+System.out.println("1> Enter 'B' to return back");
+System.out.println("2> Enter 'H' to return Home Page");
 char m7=sc7.next().charAt(0);
 switch (m7) {
 case 'b': honeymoon();
  break;
 case 'B': honeymoon();
+break;
+case 'h': fav();
+break;
+case 'H': fav();
 break;
  default : System.out.println(" invalid Character");
 }
@@ -1547,12 +1771,17 @@ break;
 System.out.println("-------City Map-------");
 System.out.println(" ");
 Scanner sc8 = new Scanner(System.in);
-System.out.println("Enter 'B' to return back");
+System.out.println("1> Enter 'B' to return back");
+System.out.println("2> Enter 'H' to return Home Page");
 char m8=sc8.next().charAt(0);
 switch (m8) {
 case 'b': honeymoon();
  break;
 case 'B': honeymoon();
+break;
+case 'h': fav();
+break;
+case 'H': fav();
 break;
  default : System.out.println(" invalid Character");
 }
@@ -1575,12 +1804,17 @@ break;
 System.out.println("-------City Map-------");
 System.out.println(" ");
 Scanner sc9 = new Scanner(System.in);
-System.out.println("Enter 'B' to return back");
+System.out.println("1> Enter 'B' to return back");
+System.out.println("2> Enter 'H' to return Home Page");
 char m9=sc9.next().charAt(0);
 switch (m9) {
 case 'b': honeymoon();
  break;
 case 'B': honeymoon();
+break;
+case 'h': fav();
+break;
+case 'H': fav();
 break;
  default : System.out.println(" invalid Character");
 }
@@ -1603,12 +1837,17 @@ break;
 System.out.println("-------City Map-------");
 System.out.println(" ");
 Scanner sc10 = new Scanner(System.in);
-System.out.println("Enter 'B' to return back");
+System.out.println("1> Enter 'B' to return back");
+System.out.println("2> Enter 'H' to return Home Page");
 char m10=sc10.next().charAt(0);
 switch (m10) {
 case 'b': honeymoon();
  break;
 case 'B': honeymoon();
+break;
+case 'h': fav();
+break;
+case 'H': fav();
 break;
  default : System.out.println(" invalid Character");
 }
@@ -1631,12 +1870,17 @@ break;
 System.out.println("-------City Map-------");
 System.out.println(" ");
 Scanner sc11 = new Scanner(System.in);
-System.out.println("Enter 'B' to return back");
+System.out.println("1> Enter 'B' to return back");
+System.out.println("2> Enter 'H' to return Home Page");
 char m11=sc11.next().charAt(0);
 switch (m11) {
 case 'b': honeymoon();
  break;
 case 'B': honeymoon();
+break;
+case 'h': fav();
+break;
+case 'H': fav();
 break;
  default : System.out.println(" invalid Character");
 }
@@ -1659,12 +1903,17 @@ break;
 System.out.println("-------City Map-------");
 System.out.println(" ");
 Scanner sc12 = new Scanner(System.in);
-System.out.println("Enter 'B' to return back");
+System.out.println("1> Enter 'B' to return back");
+System.out.println("2> Enter 'H' to return Home Page");
 char m12=sc12.next().charAt(0);
 switch (m12) {
 case 'b': honeymoon();
  break;
 case 'B': honeymoon();
+break;
+case 'h': fav();
+break;
+case 'H': fav();
 break;
  default : System.out.println(" invalid Character");
 }
@@ -1687,12 +1936,17 @@ break;
 System.out.println("-------City Map-------");
 System.out.println(" ");
 Scanner sc13 = new Scanner(System.in);
-System.out.println("Enter 'B' to return back");
+System.out.println("1> Enter 'B' to return back");
+System.out.println("2> Enter 'H' to return Home Page");
 char m13=sc13.next().charAt(0);
 switch (m13) {
 case 'b': honeymoon();
  break;
 case 'B': honeymoon();
+break;
+case 'h': fav();
+break;
+case 'H': fav();
 break;
  default : System.out.println(" invalid Character");
 }
@@ -1715,12 +1969,17 @@ break;
 System.out.println("-------City Map-------");
 System.out.println(" ");
 Scanner sc14 = new Scanner(System.in);
-System.out.println("Enter 'B' to return back");
+System.out.println("1> Enter 'B' to return back");
+System.out.println("2> Enter 'H' to return Home Page");
 char m14=sc14.next().charAt(0);
 switch (m14) {
 case 'b': honeymoon();
  break;
 case 'B': honeymoon();
+break;
+case 'h': fav();
+break;
+case 'H': fav();
 break;
  default : System.out.println(" invalid Character");
 }
@@ -1743,18 +2002,24 @@ break;
 System.out.println("-------City Map-------");
 System.out.println(" ");
 Scanner sc15 = new Scanner(System.in);
-System.out.println("Enter 'B' to return back");
+System.out.println("1> Enter 'B' to return back");
+System.out.println("2> Enter 'H' to return Home Page");
 char m15=sc15.next().charAt(0);
 switch (m15) {
 case 'b': honeymoon();
  break;
 case 'B': honeymoon();
 break;
+case 'h': fav();
+break;
+case 'H': fav();
+break;
  default : System.out.println(" invalid Character");
 }
 		break;
 	
-		default: System.out.println("Invalid number, please enter valid number(:");
+		default: System.out.println("Invalid number, please enter valid number\\nxxxxxxxxxxxxxxxx\\n #.Re-Eneter Number");
+		honeymoon();
 		}
 	}
 	
@@ -1936,6 +2201,7 @@ class States extends Favourite {
 		break;
 		
 		default : System.out.println(" Please Choose Valid Number");
+		           states();
 		}
 	}
 	}
@@ -1961,6 +2227,7 @@ class States extends Favourite {
 			case 'B': states();
 			break;
 			 default : System.out.println(" invalid Character");
+			 andraPradesh();
 			}
 		}
 		public void arunachalPradesh() {
@@ -1982,6 +2249,7 @@ class States extends Favourite {
 			case 'B': states();
 			break;
 			 default : System.out.println(" invalid Character");
+			 arunachalPradesh();
 			}
 		}
 		public void assam() {
@@ -2003,6 +2271,7 @@ class States extends Favourite {
 			case 'B': states();
 			break;
 			 default : System.out.println(" invalid Character");
+			 assam();
 			}
 		}
 		public void bihar() {
@@ -2024,6 +2293,7 @@ class States extends Favourite {
 			case 'B': states();
 			break;
 			 default : System.out.println(" invalid Character");
+			 bihar();
 			}
 		}
 		public void chhattisgarh() {
@@ -2045,6 +2315,7 @@ class States extends Favourite {
 			case 'B': states();
 			break;
 			 default : System.out.println(" invalid Character");
+			 chhattisgarh();
 			}
 		}
 		public void goa() {
@@ -2066,6 +2337,7 @@ class States extends Favourite {
 			case 'B': states();
 			break;
 			 default : System.out.println(" invalid Character");
+			 goa();
 			}
 		}
 		public void gujrat() {
@@ -2087,6 +2359,7 @@ class States extends Favourite {
 			case 'B': states();
 			break;
 			 default : System.out.println(" invalid Character");
+			 gujrat();
 			}
 		}
 		public void haryana() {
@@ -2108,6 +2381,7 @@ class States extends Favourite {
 			case 'B': states();
 			break;
 			 default : System.out.println(" invalid Character");
+			 haryana();
 			}
 		}
 		public void himachalpradesh() {
@@ -2129,6 +2403,7 @@ class States extends Favourite {
 			case 'B': states();
 			break;
 			 default : System.out.println(" invalid Character");
+			 himachalpradesh();
 			}
 		}
 		public void jharkhand() {
@@ -2150,6 +2425,7 @@ class States extends Favourite {
 			case 'B': states();
 			break;
 			 default : System.out.println(" invalid Character");
+			 jharkhand();
 			}
 		}
 		public void karnatka() {
@@ -2171,6 +2447,7 @@ class States extends Favourite {
 			case 'B': states();
 			break;
 			 default : System.out.println(" invalid Character");
+			 karnatka();
 			}
 		}
 		public void kerla() {
@@ -2192,6 +2469,7 @@ class States extends Favourite {
 			case 'B': states();
 			break;
 			 default : System.out.println(" invalid Character");
+			 kerla();
 			}
 		}
 		public void madhyaPradesh() {
@@ -2213,6 +2491,7 @@ class States extends Favourite {
 			case 'B': states();
 			break;
 			 default : System.out.println(" invalid Character");
+			 madhyaPradesh();
 			}
 		}
 		public void maharashtra() {
@@ -2234,6 +2513,7 @@ class States extends Favourite {
 			case 'B': states();
 			break;
 			 default : System.out.println(" invalid Character");
+			  maharashtra();
 			}
 		}
 		public void manipur() {
@@ -2255,6 +2535,7 @@ class States extends Favourite {
 			case 'B': states();
 			break;
 			 default : System.out.println(" invalid Character");
+			manipur();
 			}
 		}
 		public void mizoram() {
@@ -2276,6 +2557,7 @@ class States extends Favourite {
 			case 'B': states();
 			break;
 			 default : System.out.println(" invalid Character");
+			 mizoram();
 			}
 		}
 		public void odisha() {
@@ -2297,6 +2579,7 @@ class States extends Favourite {
 			case 'B': states();
 			break;
 			 default : System.out.println(" invalid Character");
+			 odisha();
 			}
 		}
 		public void punjab() {
@@ -2318,6 +2601,7 @@ class States extends Favourite {
 			case 'B': states();
 			break;
 			 default : System.out.println(" invalid Character");
+			 punjab();
 			}
 		}
 		public void rajashthan() {
@@ -2339,6 +2623,7 @@ class States extends Favourite {
 			case 'B': states();
 			break;
 			 default : System.out.println(" invalid Character");
+			 rajashthan();
 			}
 		}
 		public void sikkim() {
@@ -2360,6 +2645,7 @@ class States extends Favourite {
 			case 'B': states();
 			break;
 			 default : System.out.println(" invalid Character");
+			 sikkim();
 			}
 		}
 		public void tamilnadu() {
@@ -2381,6 +2667,7 @@ class States extends Favourite {
 			case 'B': states();
 			break;
 			 default : System.out.println(" invalid Character");
+			 tamilnadu();
 			}
 		}
 		public void telangana() {
@@ -2402,6 +2689,7 @@ class States extends Favourite {
 			case 'B': states();
 			break;
 			 default : System.out.println(" invalid Character");
+			 telangana();
 			}
 		}
 		public void tripur() {
@@ -2423,6 +2711,7 @@ class States extends Favourite {
 			case 'B': states();
 			break;
 			 default : System.out.println(" invalid Character");
+			 tripur();
 			}
 		}
 		public void uttrakhand() {
@@ -2444,6 +2733,7 @@ class States extends Favourite {
 			case 'B': states();
 			break;
 			 default : System.out.println(" invalid Character");
+			 uttrakhand();
 			}
 		}
 		public void uttarPradesh() {
@@ -2465,6 +2755,7 @@ class States extends Favourite {
 			case 'B': states();
 			break;
 			 default : System.out.println(" invalid Character");
+			 uttarPradesh();
 			}
 		}
 		public void westBengal() {
@@ -2486,6 +2777,7 @@ class States extends Favourite {
 			case 'B': states();
 			break;
 			 default : System.out.println(" invalid Character");
+			 westBengal();
 			}
 		}
 		public void aani() {
@@ -2506,6 +2798,7 @@ class States extends Favourite {
 			case 'B': states();
 			break;
 			 default : System.out.println(" invalid Character");
+			 aani();
 			}
 		}
 		public void chandigarh() {
@@ -2527,6 +2820,7 @@ class States extends Favourite {
 			case 'B': states();
 			break;
 			 default : System.out.println(" invalid Character");
+			 chandigarh();
 			}
 		}
 		public void delhi() {
@@ -2548,6 +2842,7 @@ class States extends Favourite {
 			case 'B': states();
 			break;
 			 default : System.out.println(" invalid Character");
+			 delhi();
 			}
 		}
 		public void j$k() {
@@ -2569,6 +2864,7 @@ class States extends Favourite {
 			case 'B': states();
 			break;
 			 default : System.out.println(" invalid Character");
+			 j$k();
 			}
 		}
 		public void ladhak() {
@@ -2590,6 +2886,7 @@ class States extends Favourite {
 			case 'B': states();
 			break;
 			 default : System.out.println(" invalid Character");
+			 ladhak();
 			}
 		}
 
